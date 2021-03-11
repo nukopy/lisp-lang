@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://minghai.hatenadiary.org/entry/20140402/p1 -->
+<html lang="ja" data-admin-domain="//blog.hatena.ne.jp" data-admin-origin="https://blog.hatena.ne.jp" data-author="minghai" data-avail-langs="ja en" data-blog="minghai.hatenadiary.org" data-blog-host="minghai.hatenadiary.org" data-blog-is-public="1" data-blog-name="minghaiの日記" data-blog-owner="minghai" data-blog-uri="https://minghai.hatenadiary.org/" data-blog-uuid="17680117127089447079" data-blogs-uri-base="https://minghai.hatenadiary.org" data-brand="hatenablog" data-data-layer="{&quot;hatenablog&quot;:{&quot;permalink_entry&quot;:{&quot;author_name&quot;:&quot;minghai&quot;,&quot;categories&quot;:&quot;&quot;,&quot;title&quot;:&quot;\u975e\u516c\u5f0fPDF\u7248SICP\u306e\u5168\u8a33\u3092\u516c\u958b\u3057\u307e\u3057\u305f&quot;,&quot;uri&quot;:&quot;https://minghai.hatenadiary.org/entry/20140402/p1&quot;,&quot;hour&quot;:&quot;0&quot;,&quot;date&quot;:&quot;2014-04-02&quot;},&quot;page_id&quot;:&quot;entry&quot;,&quot;brand&quot;:&quot;hatenablog&quot;,&quot;blog&quot;:{&quot;is_sleeping&quot;:&quot;true&quot;,&quot;entry_show_footer_related_entries&quot;:&quot;false&quot;,&quot;enable_ads&quot;:&quot;true&quot;,&quot;lang&quot;:&quot;ja&quot;,&quot;name&quot;:&quot;minghai\u306e\u65e5\u8a18&quot;,&quot;is_responsive_view&quot;:&quot;false&quot;,&quot;is_public&quot;:&quot;true&quot;,&quot;uri&quot;:&quot;https://minghai.hatenadiary.org/&quot;,&quot;owner_name&quot;:&quot;minghai&quot;,&quot;force_pc_view&quot;:&quot;false&quot;,&quot;enable_keyword_link&quot;:&quot;true&quot;,&quot;content_seems_japanese&quot;:&quot;true&quot;,&quot;disable_ads&quot;:&quot;&quot;},&quot;pro&quot;:&quot;free&quot;,&quot;router_type&quot;:&quot;blogs&quot;,&quot;brand_tracking_category&quot;:&quot;hatenablog&quot;,&quot;analytics&quot;:{&quot;non_sampling_property_id&quot;:&quot;&quot;,&quot;brand_property_id&quot;:&quot;&quot;,&quot;separated_property_id&quot;:&quot;UA-29716941-23&quot;,&quot;property_id&quot;:&quot;&quot;},&quot;admin&quot;:{}}}" data-device="pc" data-dont-recommend-pro="false" data-global-domain="https://hatenablog.com" data-globalheader-color="b" data-globalheader-type="pc" data-has-touch-view="1" data-page="entry" data-parts-domain="https://hatenablog-parts.com" data-plus-available="" data-pro="false" data-router-type="blogs" data-sentry-dsn="https://03a33e4781a24cf2885099fed222b56d@sentry.io/1195218" data-sentry-environment="production" data-sentry-sample-rate="0.1" data-static-domain="https://cdn.blog.st-hatena.com" data-version="f085ebb5a08843dbe616e808e89268f2" itemscope="" itemtype="http://schema.org/Article" data-initial-state="{}"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/publishertag.prebid.js"></script><script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/osd.js"></script><script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/pubads_impl_rendering_2020041602.js"></script><script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/1733466696949178" async=""></script><script async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/fbevents.js"></script><script async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/uwt.js"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/segmentation.js"></script><script type="text/javascript">!function(){"use strict";var r=(i.prototype.isAdBlocked=function(t){var e=this;this.createPixel(i.allowedPixelUrl,function(){(e.allowedPixelLoaded=!0)===e.blockedPixelFailed&&t(!0)},function(){}),this.createPixel(i.blockedPixelUrl,function(){t(!1)},function(){(e.blockedPixelFailed=!0)===e.allowedPixelLoaded&&t(!0)})},i.prototype.createPixel=function(t,e,i){var r=document.createElement("img");r.src=t,r.height=1,r.width=1,r.style.display="none",r.onload=e,r.onerror=i},i.allowedPixelUrl="https://static.criteo.net/images/pixel.gif?ch=1",i.blockedPixelUrl="https://static.criteo.net/images/pixel.gif?ch=2",i);function i(){this.allowedPixelLoaded=!1,this.blockedPixelFailed=!1}var o=(t.prototype.checkLocalStorage=function(){if(!this.localStorage)return!1;var t=this.CHECK_STORAGE_KEY;try{return this.localStorage.setItem(t,t),this.localStorage.removeItem(t),!0}catch(t){return!1}},t.prototype.removeItem=function(t){this.localStorage.removeItem(t),this.localStorage.removeItem(t+this.EXPIRE_SUFFIX)},t.prototype.getItem=function(t,e){var i=(new Date).getTime(),r=this.localStorage.getItem(t+this.EXPIRE_SUFFIX),o=r?parseInt(r,10):-1;return-1!==o&&o<i||e&&(-1===o||e<o-i)?(this.removeItem(t),null):this.localStorage.getItem(t)},t.prototype.setItem=function(t,e,i){if(this.localStorage.setItem(t,e),i){var r=(new Date).getTime()+i;this.localStorage.setItem(t+this.EXPIRE_SUFFIX,r.toString())}},t.prototype.getAllItemsByPrefix=function(t){var e=[];for(var i in localStorage)0===i.indexOf(t)&&e.push(i);return e},t);function t(t){this.EXPIRE_SUFFIX="_expires",this.CHECK_STORAGE_KEY="criteo_localstorage_check",this.localStorage=function(t){try{return t.localStorage}catch(t){return}}(t||window)}var c,e,v=(n.create=function(){return new n},n.prototype.adBlockFlagEnabled=function(){if(!this.localStorageEnabled)return!1;var t=n.ADBLOCK_FLAG_KEY;return null!==this.localStorageHelper.getItem(t)},n.prototype.enableAdBlockFlag=function(){if(this.localStorageEnabled){var t=n.ADBLOCK_FLAG_KEY;this.localStorageHelper.setItem(t,"1",n.ADBLOCK_FLAG_LIFETIME)}},n.prototype.disableAdBlockFlag=function(){if(this.localStorageEnabled){var t=n.ADBLOCK_FLAG_KEY;this.localStorageHelper.removeItem(t)}},n.prototype.setAdBlockFlagTimer=function(t){var e=this;if(!this.adBlockFlagEnabled()&&this.timerEnabled&&!this.timerStarted){var i=new r;this.timerStarted=!0,setTimeout(function(){e.timerEnabled&&i.isAdBlocked(function(t){t?e.enableAdBlockFlag():e.disableAdBlockFlag()}),e.disableAdBlockFlagTimer()},t)}},n.prototype.disableAdBlockFlagTimer=function(){this.timerEnabled=!1},n.ADBLOCK_FLAG_KEY="criteo_adblock_flag",n.ADBLOCK_FLAG_LIFETIME=864e5,n);function n(){this.localStorageHelper=new o,this.localStorageEnabled=this.localStorageHelper.checkLocalStorage(),this.timerEnabled=!0,this.timerStarted=!1}(e=c=c||{})[e.Error=0]="Error",e[e.Warning=1]="Warning",e[e.Debug=2]="Debug";var a=["color: #fff;","background: #ff8f1c;","display: inline-block;","padding: 1px 4px;","border-radius: 3px;"].join(" "),M=(s.Log=function(t,e){if(!(s.LOGLEVEL<t)){var i=c[t].toUpperCase(),r=window.navigator.userAgent,o=0<r.indexOf("MSIE ")||0<r.indexOf("Trident/");window.console&&(o?console.log("[PubTag] "+i+": "+e):console.log("%cPubTag",a,i+": "+e))}},s.Debug=function(t){s.Log(c.Debug,t)},s.Warning=function(t){s.Log(c.Warning,t)},s.Error=function(t){s.Log(c.Error,t)},s.LOGLEVEL=c.Error,s);function s(){}var d=(l.CreateRunning=function(){var t=new l;return t.start(),t},l.CreateWithStartTime=function(t){var e=new l(!1);return e.startTime=t,e},l.TimeSincePageLoad=function(){if(window.performance){if(window.performance.now)return window.performance.now();if(window.performance.timing&&window.performance.timing.navigationStart)return(new Date).getTime()-performance.timing.navigationStart}return 0},l.prototype.start=function(){this.startTime=this.now()},l.prototype.elapsed=function(){return this.now()-this.startTime},l);function l(t){void 0===t&&(t=!0),t&&window.performance&&window.performance.now?this.now=window.performance.now.bind(window.performance):Date.now?this.now=Date.now:this.now=function(){return(new Date).getTime()}}function p(t){try{return JSON.parse(t)}catch(t){return}}var m=91,y=(u.prototype.getCMPFrame=function(){for(var t,e=this.currentWindow,i=0;i<10;++i){try{e.frames.__cmpLocator&&(t=e)}catch(t){}if(e===this.currentWindow.top)break;e=e.parent}return t},u.prototype.hasCallerFunctionInFrame=function(){return"function"==typeof this.currentWindow.__cmp},u.prototype.readyToRetrieve=function(){return this.hasCallerFunctionInFrame()||void 0!==this.getCMPFrame()},u.prototype.pingWithTimeout=function(r,o,t,e,i){function n(t,e){M.Warning(e),clearTimeout(t),i()}var a=this;return setTimeout(function(){var i=setTimeout(function(){n(o,"Timeout: Unable to get ping return after "+t+"ms")},t);a.executeCommand("ping",null,function(t,e){clearTimeout(i),e?(M.Debug("GDPR CMP ping returned in "+r.elapsed()+"ms"),!0!==t.cmpLoaded&&n(o,"GDPR ping returned cmpLoaded which is not true"),M.Debug("GDPR ping returned cmpLoaded which is true")):n(o,"Error sending ping to GDPR CMP")})},e)},u.prototype.retrieveConsent=function(i){var t=this,r=d.CreateRunning(),o=!1,n=setTimeout(function(){o=!0,M.Warning("Timeout: Unable to resolve GDPR consent after "+t.timeout+"ms"),i(void 0)},this.timeout),a=this.pingWithTimeout(r,n,this.pingTimeout,this.pingDelay,function(){o=!0,M.Warning("Timeout: Unable to ping GDPR API after "+t.pingTimeout+"ms"),i(void 0)});this.executeCommand("getConsentData",null,function(t,e){clearTimeout(a),o||(clearTimeout(n),e?(M.Debug("GDPR consent retrieved in "+r.elapsed()+"ms"),u.processConsentData(t,i)):(M.Warning("Error retrieving GDPR consent data from CMP"),i(void 0)))})},u.prototype.retrieveConsentForPassback=function(i){var t=this,r=d.CreateRunning(),o=!1,n=setTimeout(function(){o=!0,M.Warning("Timeout: Unable to resolve GDPR consent after "+t.timeout+"ms"),i(void 0)},this.timeout),a=this.pingWithTimeout(r,n,this.pingTimeout,this.pingDelay,function(){o=!0,M.Warning("Timeout: Unable to ping GDPR API after "+t.pingTimeout+"ms"),i(void 0)});this.executeCommand("getVendorConsents",[m],function(t,e){clearTimeout(a),o||(clearTimeout(n),e?(M.Debug("Consent (getVendorConsents) retrieved in "+r.elapsed()+"ms"),u.processConsentData(t,i)):(M.Warning("Error while calling getVendorConsents from CMP"),i(void 0)))})},u.processConsentData=function(t,e){if(t){var i={};void 0!==t.consentData&&(i.consentData=t.consentData),void 0!==t.gdprApplies&&(i.gdprApplies=!!t.gdprApplies),t.vendorConsents&&void 0!==t.vendorConsents[m.toString()]&&(i.consentGiven=!!t.vendorConsents[m.toString()]),e(i)}else M.Warning("Unable to read GDPR consent data from CMP"),e(void 0)},u.prototype.executeCommand=function(t,e,i){var n=this;if(!this.hasCallerFunctionInFrame()){M.Debug("No GDPR CMP defined on current frame");var a=this.getCMPFrame();this.currentWindow.__cmp=function(t,e,i){if(!a)return M.Warning("GDPR CMP not found in any frame"),void i({msg:"GDPR CMP not found in any frame"},!1);var r=Math.random().toString(10),o={__cmpCall:{command:t,parameter:e,callId:r}};n.cmpCallbacks[r]=i,a.postMessage(o,"*")},this.currentWindow.addEventListener("message",function(t){var e="string"==typeof t.data?p(t.data):t.data;if(e&&e.__cmpReturn&&e.__cmpReturn.callId&&e.__cmpReturn.returnValue){var i=e.__cmpReturn;n.cmpCallbacks&&n.cmpCallbacks[i.callId]&&(n.cmpCallbacks[i.callId](i.returnValue,i.success),delete n.cmpCallbacks[i.callId])}},!1)}this.currentWindow.__cmp(t,e,i)},u);function u(t,e,i,r){void 0===e&&(e=parseInt("10000",10)),void 0===i&&(i=Math.min(e,parseInt("50",10))),void 0===r&&(r=Math.min(e,parseInt("1000",10))),this.cmpCallbacks={},this.currentWindow=t,this.timeout=e,this.pingTimeout=i,this.pingDelay=r}var h,f,P=((h=function(t,e){return(h=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}h(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(g,f=function(){}),g.prototype.ResizeFrame=function(t,e){if(this.document.defaultView&&this.document.defaultView.frameElement){var i=this.document.defaultView.frameElement;i.width=t.toString(),i.height=e.toString()}},g.prototype.Write=function(t){this.document.open(),this.document.write(t),this.document.close()},g.prototype.LoadScript=function(t){this.Write("<script type='text/javascript' src='"+t+"'><\/script>")},g);function g(t){var e=f.call(this)||this;return e.document=t,e}var C=(I.prototype.silentModeEnabled=function(){var t=I.SILENT_MODE_KEY;return this.localStorageEnabled&&null!==this.localStorageHelper.getItem(t)},I.prototype.enableSilentMode=function(t){if(this.localStorageEnabled){var e=I.SILENT_MODE_KEY;this.localStorageHelper.setItem(e,"1",t)}},I.SILENT_MODE_KEY="criteo_silent_mode",I);function I(){this.localStorageHelper=new o,this.localStorageEnabled=this.localStorageHelper.checkLocalStorage()}function b(){return(new Date).getTime()}var _=(E.prototype.get=function(t){var e=localStorage.getItem(t);if(e){var i=e.split("|");if(!(i.length<2||parseInt(i[1],10)<b()))return i[0]}},E.prototype.set=function(t,e){var i=b()+e;localStorage.setItem(t,this.id+"|"+i)},E.prototype.acquire=function(t,e,i){var r=this;void 0===i&&(i=100),i<=0||this.tryAcquire(e)?(t(),this.release()):setTimeout(function(){r.acquire(t,e,i-10)},10)},E.prototype.tryAcquire=function(t){localStorage.setItem(this.x,this.id);var e=this.get(this.y);return!(e&&e!==this.id||(this.set(this.y,t),localStorage.getItem(this.x)!==this.id||this.get(this.y)!==this.id))},E.prototype.release=function(){localStorage.removeItem(this.x),localStorage.removeItem(this.y)},E);function E(t){this.x=t+"_lock_A",this.y=t+"_lock_B",this.id=Math.floor(1e9*Math.random()).toString()}var w=(S.prototype.toString=function(){return this.width+"x"+this.height},S);function S(t,e){this.width=t,this.height=e}var T=(R.prototype.toString=function(){return"ImpId"+this.impressionId},R);function R(t){this.impressionId=t}var A,O,D=((A=function(t,e){return(A=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}A(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(B,O=T),B.prototype.toString=function(){return O.prototype.toString.call(this)+"_Size"+this.size+"_NetworkId"+this.networkId},B);function B(t,e,i){var r=O.call(this,t)||this;return r.size=e,r.networkId=i,r}var k,x,F=((k=function(t,e){return(k=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}k(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(L,x=T),L.prototype.toString=function(){return x.prototype.toString.call(this)+"_ZoneId"+this.zoneId},L);function L(t,e){var i=x.call(this,t)||this;return i.zoneId=e,i}var N=(U.prototype.createKeysFromSlotRequest=function(t){if(this.useZoneIdIntegration)return[new F(t.impId,t.zoneId)];for(var e=[],i=0,r=t.sizes;i<r.length;i++){var o=r[i];e.push(new D(t.impId,o,this.networkId))}return e},U.prototype.createKeyFromSlotResponse=function(t){return this.useZoneIdIntegration?new F(t.impid,t.zoneid):new D(t.impid,new w(t.width,t.height),this.networkId)},U.prototype.createKeyFromBid=function(t){return this.useZoneIdIntegration?new F(t.impressionId,t.zoneId):new D(t.impressionId,new w(t.width,t.height),this.networkId)},U);function U(t,e){this.useZoneIdIntegration=t,this.networkId=e}var W=(q.useZoneIdIntegration=function(t,e){return void 0===e||0===t.filter(function(t){return void 0!==t.sizes&&0<t.sizes.length}).length},q.prototype.get=function(t){var e=this.localStorageHelper.getItem(t),i=e&&p(e);return i&&"object"==typeof i&&"bids"in i?(i.bids=i.bids.filter(function(t){return t.expiration>b()}),i):{bids:[]}},q.prototype.getBySlotKey=function(t){return this.get(q.BID_KEY_PREFIX+t.toString())},q.prototype.set=function(t,e){0<e.bids.length||e.no_bid&&e.no_bid>b()?this.localStorageHelper.setItem(t,JSON.stringify(e)):this.localStorageHelper.removeItem(t)},q.prototype.setBySlotKey=function(t,e){this.set(q.BID_KEY_PREFIX+t.toString(),e)},q.prototype.filterNoBidSlots=function(t){for(var e=[],i=0,r=t;i<r.length;i++){for(var o=r[i],n=[],a=0,s=this.slotKeyFactory.createKeysFromSlotRequest(o);a<s.length;a++){var d=s[a];this.getBid(d,0)!==q.NO_BID&&(d instanceof D?n.push(d.size):e.push(o))}0<n.length&&(o.sizes=n,e.push(o))}return e},q.prototype.getRequestCachedBids=function(t,e){void 0===e&&(e=5e3);for(var i=[],r=0,o=t;r<o.length;r++)for(var n=o[r],a=0,s=this.slotKeyFactory.createKeysFromSlotRequest(n);a<s.length;a++){var d=s[a],c=this.getBid(d,e);void 0!==c&&c!==q.NO_BID&&i.push(c)}return i},q.prototype.getBid=function(t,e){if(void 0===e&&(e=5e3),this.localStorageEnabled){var i=this.getBySlotKey(t);if(i.no_bid&&i.no_bid>b())return q.NO_BID;if(0<e)for(var r=0,o=i.bids;r<o.length;r++){var n=o[r];if(new _(q.BID_KEY_PREFIX+n.bid.slotid).tryAcquire(e))return n.bid}}},q.prototype.storeRequestNoBid=function(t,e){for(var i=0,r=this.slotKeyFactory.createKeysFromSlotRequest(t);i<r.length;i++){var o=r[i];this.storeNoBid(o,e)}},q.prototype.storeResponseBid=function(e,i){var t=this.slotKeyFactory.createKeyFromSlotResponse(e);this.modifyCache(t,function(t){t.bids.push({bid:e,expiration:b()+1e3*i})})},q.prototype.storeNoBid=function(t,e){this.modifyCache(t,function(t){t.no_bid=Math.max(t.no_bid||0,b()+1e3*e)})},q.prototype.removeBid=function(i){var t=this.slotKeyFactory.createKeyFromBid(i);this.modifyCache(t,function(t){for(var e=0;e<t.bids.length;e++)if(t.bids[e].bid.slotid===i.slotId)return void t.bids.splice(e,1)}),new _(t.toString()).release()},q.prototype.modifyCache=function(e,i){var r=this;if(this.localStorageEnabled){var o=new _(e.toString());o.acquire(function(){var t=r.getBySlotKey(e);i(t),r.setBySlotKey(e,t),o.release()},1e3)}},q.prototype.clearExpiredItems=function(){for(var t=0,e=this.localStorageHelper.getAllItemsByPrefix(q.BID_KEY_PREFIX);t<e.length;t++){var i=e[t],r=this.get(i);r&&this.set(i,r)}},q.NO_BID="nobid",q.BID_KEY_PREFIX="criteo_pt_cdb_bidcache_",q);function q(t,e){this.localStorageHelper=new o,this.localStorageEnabled=this.localStorageHelper.checkLocalStorage(),this.slotKeyFactory=new N(t,e)}var G=(K.prototype.filterNoBidSlots=function(t){var e=this.bidManager.filterNoBidSlots(t);return this.context.shouldIgnoreSilentMode?(e.length!==t.length&&this.context.setSilentModeIgnored&&this.context.setSilentModeIgnored(),t):e},K.prototype.silentModeEnabled=function(){var t=!1;return this.silentModeManager.silentModeEnabled()&&(this.context.shouldIgnoreSilentMode&&this.context.setSilentModeIgnored?this.context.setSilentModeIgnored():t=!0),t},K.prototype.getCachedBids=function(t){return this.bidManager.getRequestCachedBids(t)},K.prototype.removeBid=function(t){this.bidManager.removeBid(t)},K.prototype.handleResponse=function(t,e,i,r){var o=i.time_to_next_call;0<o&&(M.Debug("Global silent mode enabled for "+o+" seconds"),this.silentModeManager.enableSilentMode(1e3*o));var n={};if(i.slots)for(var a=0,s=i.slots;a<s.length;a++)(f=s[a]).ttl&&(n[f.imp_id]=f.ttl);if(e.slots)for(var d=0,c=e.slots;d<c.length;d++){var l=0;(f=c[d]).slotid in n&&(l=n[f.slotid],delete n[f.slotid]),r&&0<l&&(M.Debug("Post-timeout bid for slot '"+f.impid+"' cached for "+l+" seconds"),this.bidManager.storeResponseBid(f,l))}for(var u in n)if(n.hasOwnProperty(u))for(var p=0,h=t;p<h.length;p++){var f;(f=h[p]).slotId===u&&(l=n[u],M.Debug("Silent mode for slot '"+f.impId+"' enabled for "+l+" seconds"),this.bidManager.storeRequestNoBid(f,l))}},K.prototype.clearExpiredItems=function(){var t=this;setTimeout(function(){t.bidManager.clearExpiredItems()},3e3)},K);function K(t,e,i){var r=W.useZoneIdIntegration(e,i);this.bidManager=new W(r,i),this.silentModeManager=new C,this.context=t}var H=(V.prototype.eval=function(t){},V);function V(t){this.name=t}var z,j,Y=((z=function(t,e){return(z=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}z(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(X,j=H),X.prototype.eval=function(t){this.callback&&this.callback.apply(this)},X.NAME="genericEvent",X);function X(t){var e=j.call(this,X.NAME)||this;return e.callback=t,e}var J=(Z.prototype.generateRandomId=function(){return Math.random().toString(36).replace(/[^a-z]+/g,"").substr(0,6)},Z);function Z(t,e,i,r,o,n,a){this.id=this.generateRandomId(),this.slotId=t,this.impressionId=e,this.cpm=i,this.width=r,this.height=o,this.zoneId=n,this.dealCode=a}var Q,$,tt=((Q=function(t,e){return(Q=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}Q(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(et,$=J),et.prototype.GenerateEvent=function(t){var e=this;return t.ResizeFrame(this.width,this.height),new Y(function(){return t.LoadScript(e.displayUrl)})},et.prototype.GenerateMessage=function(){return{displayUrl:this.displayUrl}},et);function et(t,e,i,r,o,n,a,s){var d=$.call(this,t,e,i,r,o,n,s)||this;return d.displayUrl=a,d}var it,rt,ot=((it=function(t,e){return(it=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}it(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(nt,rt=J),nt.prototype.GenerateEvent=function(t){var e=this;return t.ResizeFrame(this.width,this.height),new Y(function(){return t.Write(e.creative)})},nt.prototype.GenerateMessage=function(){return{creative:this.creative}},nt);function nt(t,e,i,r,o,n,a,s){var d=rt.call(this,t,e,i,r,o,n,s)||this;return d.creative=a,d}var at,st,dt=((at=function(t,e){return(at=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}at(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(ct,st=J),ct.prototype.GenerateEvent=function(t){var e=this;return"function"!=typeof this.nativeCallback?(M.Error("'nativeCallback' parameter is not a function in placements object"),new Y(void 0)):"object"!=typeof this.nativePayload?(M.Error("'nativePayload' parameter is not an object in placements object"),new Y(void 0)):new Y(function(){return e.nativeCallback(e.nativePayload)})},ct.prototype.GenerateMessage=function(){return{nativePayload:this.nativePayload}},ct);function ct(t,e,i,r,o,n,a,s,d){var c=st.call(this,t,e,i,r,o,n,d)||this;return c.nativeCallback=a,c.nativePayload=s,c}var lt=function(t,e,i,r,o,n,a,s,d,c,l,u,p,h,f,g,v,m,y,C){this.publisherTagVersion=t,this.slots=e,this.elapsed=i,this.isTimeout=r,this.pageLoadElapsed=o,this.adapterStartElapsed=n,this.cdbCallStartElapsed=a,this.cdbCallEndElapsed=s,this.adapterEndElapsed=d,this.setTargetingElapsed=c,this.adapterTimeout=l,this.adapterIsTimeout=u,this.timeToFirstByte=p,this.requestGroupId=h,this.sid=f,this.previousBuildRequestTimestamp=g,this.silentModeRequestCount=v,this.localStorageKeyCount=m,this.connectionEstablishmentTime=y,this.domainLookupTime=C},ut=function(t,e,i,r,o){this.impressionId=t,this.zoneId=e,this.adUnitId=i,this.cachedBidUsed=r,this.isDsc=o},pt=(ht.prototype.withElapsed=function(t){return this.elapsed=Math.round(t),this},ht.prototype.withIsTimeout=function(t){return this.isTimeout=t,this},ht.prototype.withPageLoadElapsed=function(t){return this.pageLoadElapsed=Math.round(t),this},ht.prototype.withAdapterStartElapsed=function(t){return this.adapterStartElapsed=Math.round(t),this},ht.prototype.withCdbCallStartElapsed=function(t){return this.cdbCallStartElapsed=Math.round(t),this},ht.prototype.withCdbCallEndElapsed=function(t){return this.cdbCallEndElapsed=Math.round(t),this},ht.prototype.withSetTargetingElapsed=function(t){return this.setTargetingElapsed=Math.round(t),this},ht.prototype.withAdapterEndElapsed=function(t){return this.adapterEndElapsed=Math.round(t),this},ht.prototype.withAdapterTimeout=function(t){return this.adapterTimeout=t&&Math.round(t),this},ht.prototype.withCachedBidsReturned=function(t){return this.cachedBidsReturned=t,this},ht.prototype.withTimeToFirstByte=function(t){return this.timeToFirstByte=t&&Math.round(t),this},ht.prototype.withConnectionEstablishmentTime=function(t){return this.connectionEstablishmentTime=t&&Math.round(t),this},ht.prototype.withDomainLookupTime=function(t){return this.domainLookupTime=t&&Math.round(t),this},ht.prototype.withRequestGroupId=function(t){return this.requestGroupId=t,this},ht.prototype.withSid=function(t){return this.sid=t,this},ht.prototype.addSlot=function(t,e,i,r){var o=0<this.cachedBidsReturned.filter(function(t){return t.impid===i&&t.zoneid===e}).length;return this.slots.push(new ut(t,e,i,o,r)),this},ht.prototype.build=function(){var t;return void 0!==this.adapterTimeout&&(t=this.adapterEndElapsed>this.adapterTimeout),new lt(88,this.slots,this.elapsed,this.isTimeout,this.pageLoadElapsed,this.adapterStartElapsed,this.cdbCallStartElapsed,this.cdbCallEndElapsed,this.adapterEndElapsed,this.setTargetingElapsed,this.adapterTimeout,t,this.timeToFirstByte,this.requestGroupId,this.sid,this.metricsManager.getPreviousBuildRequestTimestamp(),this.metricsManager.getSilentModeRequestCount(!0),this.metricsManager.getLocalStorageKeyCount(),this.connectionEstablishmentTime,this.domainLookupTime)},ht);function ht(t){this.elapsed=0,this.isTimeout=!1,this.pageLoadElapsed=0,this.adapterStartElapsed=0,this.cdbCallStartElapsed=0,this.cdbCallEndElapsed=0,this.adapterEndElapsed=0,this.cachedBidsReturned=[],this.slots=[],this.metricsManager=t}var ft=(gt.prototype.getRequest=function(){return{feedbacks:this.feedbacks}},gt.prototype.getUrl=function(){return this.urlBuilder.buildCsmUrl(this.profileId,this.adapterVersion,this.wrapperVersion)},gt);function gt(t,e,i,r,o){this.urlBuilder=t,this.profileId=e,this.adapterVersion=r,this.wrapperVersion=o,this.feedbacks=i}var vt,mt,yt=(Ct.generateCacheBuster=function(){return Math.floor(99999999999*Math.random())},Ct);function Ct(){}function It(t){switch(t.toLowerCase()){case"amp":return vt.AMP;default:return vt.Unspecified}}(mt=vt=vt||{})[mt.Unspecified=0]="Unspecified",mt[mt.AMP=1]="AMP";var bt=(_t.prototype.buildUrl=function(t,e,i,r,o){void 0===i&&(i=vt.Unspecified);var n=_t.CRITEO_BIDDER_URL+this.getHandlerPath();return n+="?ptv=88",!0===e.isAdBlocked&&(n+="&abp=1"),n=this.appendCommonParameters(n,t,r,o),n+=e.ctoIdOnPublisherDomain?"&idcpy="+e.ctoIdOnPublisherDomain:"",n+=e.idfs?"&idfs="+e.idfs:"",n+=e.secureId?"&sid="+e.secureId:"",n+=e.isOptOut?"&optout=1":"",n+=e.bundle?"&bundle="+e.bundle:"",i!==vt.Unspecified&&(n+="&im="+i),n+=e.silentModeIgnored?"&smi=1":"",n+="&cb="+String(yt.generateCacheBuster()),n+=e.getContextFlags()},_t.prototype.buildCsmUrl=function(t,e,i){var r=_t.CRITEO_BIDDER_URL+_t.CRITEO_CSM_HANDLER;return r+="?ptv=88",this.appendCommonParameters(r,t,e,i)},_t.prototype.appendCommonParameters=function(t,e,i,r){return t+="&profileId="+String(e),void 0!==i&&(t+="&av="+String(i)),void 0!==r&&(t+="&wv="+encodeURIComponent(r)),t},_t.prototype.getHandlerPath=function(){return this.auditMode?_t.CRITEO_BIDDER_AUDIT_HANDLER:_t.CRITEO_BIDDER_HANDLER},_t.CRITEO_BIDDER_URL="https://bidder.criteo.com/",_t.CRITEO_BIDDER_HANDLER="cdb",_t.CRITEO_CSM_HANDLER="csm",_t.CRITEO_BIDDER_AUDIT_HANDLER="prebid/audit",_t);function _t(t){void 0===t&&(t=!1),this.auditMode=t}var Et=(wt.prototype.getMetrics=function(t){if(this.localStorageEnabled){var e=wt.TIMING_METRICS_STORAGE_KEY,i=this.localStorageHelper.getItem(e),r=i?p(i):[];return t&&this.localStorageHelper.removeItem(e),r}return[]},wt.prototype.setMetrics=function(t){if(this.localStorageEnabled){var e=wt.TIMING_METRICS_STORAGE_KEY;this.localStorageHelper.setItem(e,JSON.stringify(t),36e5)}},wt.prototype.storeMetric=function(t){var e=this;if(this.localStorageEnabled){var i=this.getMetrics(!1);i.push(t),this.setMetrics(i);var r=(t&&t.adapterTimeout||2e3)+1e3;setTimeout(function(){e.sendMetrics()},r)}},wt.prototype.getManagerMetrics=function(){var t=this.localStorageHelper.getItem(wt.MANAGER_METRICS_STORAGE_KEY);if(null==t)return{};var e=p(t);return void 0===e?{}:e},wt.prototype.setManagerMetrics=function(t){this.localStorageHelper.setItem(wt.MANAGER_METRICS_STORAGE_KEY,JSON.stringify(t))},wt.prototype.getPreviousBuildRequestTimestamp=function(){var t=this.getManagerMetrics().previousBuildRequestTimestamp;return isNaN(t)?void 0:t},wt.prototype.resetPreviousBuildRequestTimestamp=function(){var t=this.getManagerMetrics();t.previousBuildRequestTimestamp=(new Date).getTime().toString(),this.setManagerMetrics(t)},wt.prototype.getSilentModeRequestCount=function(t){void 0===t&&(t=!1);var e=this.getManagerMetrics().silentModeRequestCount;return t&&this.resetSilentModeRequestCount(),isNaN(e)?0:e},wt.prototype.incSilentModeRequestCount=function(){var t=this.getManagerMetrics();t.silentModeRequestCount=isNaN(t.silentModeRequestCount)?1:t.silentModeRequestCount+1,this.setManagerMetrics(t)},wt.prototype.resetSilentModeRequestCount=function(){var t=this.getManagerMetrics();t.silentModeRequestCount=0,this.setManagerMetrics(t)},wt.prototype.getLocalStorageKeyCount=function(){return this.localStorageHelper.getAllItemsByPrefix("criteo_").length+this.localStorageHelper.getAllItemsByPrefix("cto_").length},wt.prototype.sendMetrics=function(){var t=this.getMetrics(!0);if(!(t.length<=0)){this.resetPreviousBuildRequestTimestamp();var e=new ft(new bt,this.profileId,t,this.adapterVersion,this.wrapperVersion),i=e.getUrl(),r=JSON.stringify(e.getRequest());navigator.sendBeacon&&navigator.sendBeacon(i,r)}},wt.TIMING_METRICS_STORAGE_KEY="criteo_pt_cdb_metrics",wt.MANAGER_METRICS_STORAGE_KEY="criteo_pt_cdb_mngr_metrics",wt);function wt(t,e,i,r){this.profileId=t,this.adapterVersion=e,this.wrapperVersion=i,this.localStorageHelper=r||new o,this.localStorageEnabled=this.localStorageHelper.checkLocalStorage()}var St=(Tt.clearState=function(){this.cloneByImpressionId={}},Tt.tryInsertPlaceholder=function(t){var e=document.getElementById(t);if(null===e)return!1;if(e.appendChild(this.createPlaceholder()),this.isVisible(e))return!0;this.removePlaceholder(t);var i=e.parentElement;if(null===i)return!1;var r=this.createClone(e);return i.insertBefore(r,e),r.appendChild(this.createPlaceholder()),this.isVisible(r)?(this.cloneByImpressionId[t]=r,!0):(i.removeChild(r),!1)},Tt.isVisible=function(t){return 0!==t.offsetWidth&&0!==t.offsetHeight&&0!==t.getClientRects().length},Tt.createClone=function(t){var e=t.cloneNode(!1);return e.id=this.generateRandomId(),e.className="",e},Tt.generateRandomId=function(){for(var t="1234567890abcdefghijklmnopqrstuvwxyz",e="",i=0;i<20;i++){var r=Math.floor(Math.random()*t.length);e+=t.charAt(r)}return e},Tt.createPlaceholder=function(){var t=document.createElement("div");return t.style.width="1px",t.style.height="1px",t.style.display="block",t.className=Tt.PLACEHOLDER_NAME,t},Tt.removePlaceholder=function(t){var e=this.cloneByImpressionId[t];if(void 0===e){var i=document.getElementById(t);if(null!==i)for(var r=0,o=i.getElementsByClassName(Tt.PLACEHOLDER_NAME);r<o.length;r++){var n=o[r];null!==n.parentNode&&n.parentNode.removeChild(n)}}else null!==e.parentNode&&e.parentNode.removeChild(e)},Tt.insertAdIFrame=function(t){var e,i=this.cloneByImpressionId[t];if(void 0!==i)e=i;else{var r=document.getElementById(t);if(null===r)return null;e=r}for(var o=0,n=e.getElementsByClassName(Tt.PLACEHOLDER_NAME);o<n.length;o++){for(var a=n[o],s=0,d=a.childNodes;s<d.length;s++){var c=d[s];null!==c.parentNode&&c.parentNode.removeChild(c)}var l=this.createAdIFrame();return a.appendChild(l),a.style.width="",a.style.height="",a.style.display="",l}return null},Tt.createAdIFrame=function(){var t=document.createElement("iframe");return t.scrolling="no",t.marginWidth="0",t.marginHeight="0",t.frameBorder="0",t.style.border="0",t.style.verticalAlign="bottom",t},Tt.removePlaceholders=function(t,e){void 0===e&&(e=[]);for(var i=0,r=t;i<r.length;i++){var o=r[i].impId;-1===e.indexOf(o)&&Tt.removePlaceholder(o)}},Tt.tryInsertPlaceholders=function(t){for(var e=[],i=0,r=t;i<r.length;i++){var o=r[i],n=o.impId;Tt.tryInsertPlaceholder(n)&&e.push(o)}return e},Tt.PLACEHOLDER_NAME="criteo_placeholder",Tt.cloneByImpressionId={},Tt);function Tt(){}var Mt=(Pt.prototype.isValid=function(){return 0<this.slots.length},Pt.prototype.getRequest=function(){for(var t=[],e=0,i=this.slots;e<i.length;e++){var r=i[e],o={slotid:r.slotId,impid:r.impId};if(void 0!==r.zoneId&&(o.zoneid=r.zoneId),void 0!==r.nativeCallback&&(o.native=!0),void 0!==r.transactionId&&(o.transactionid=r.transactionId),void 0!==r.publisherSubId&&(o.publishersubid=r.publisherSubId),void 0!==r.sizes){for(var n=[],a=0,s=r.sizes;a<s.length;a++){var d=s[a];n.push(d.width+"x"+d.height)}o.sizes=n}if(void 0!==r.video){var c={playersizes:this.parsePlayerSizes(r.video.playersize),mimes:r.video.mimes,protocols:r.video.protocols,maxduration:r.video.maxduration,api:r.video.api,skip:r.video.skip,placement:r.video.placement,playbackmethod:r.video.playbackmethod,minduration:r.video.minduration,startdelay:r.video.startdelay};o.video=c}if(void 0!==this.viewportComputer){var l=this.viewportComputer.getSlotPosition(r);void 0!==l&&(o.position={top:l.top,left:l.left})}void 0!==r.ext&&(o.ext=r.ext),t.push(o)}var u={ceh:this.context.ceh,uspOptout:this.context.ccpaOptout,ext:this.context.userExt},p={publisher:{url:this.context.highestAccessibleUrl,ext:this.context.publisherExt},slots:t,user:u};void 0!==this.networkId&&(p.publisher.networkid=this.networkId);var h=this.metricsManager.getMetrics(!0);if(h.length&&(p.previousBidFeedback=h),this.privacyWrapper&&(this.privacyWrapper.gdprConsent&&(p.gdprConsent=this.privacyWrapper.gdprConsent),this.privacyWrapper.ccpaIabConsent&&(u.uspIab=this.privacyWrapper.ccpaIabConsent.uspString)),void 0!==this.viewportComputer){var f=this.viewportComputer.getViewport();p.viewport={width:f.width,height:f.height,scrollTop:f.scrollTop,scrollLeft:f.scrollLeft}}return p},Pt.parsePlayerSize=function(t){return t[0]+"x"+t[1]},Pt.prototype.parsePlayerSizes=function(t){return Array.isArray(t[0])?t.map(function(t){return Pt.parsePlayerSize(t)}):[Pt.parsePlayerSize(t)]},Pt.prototype.getUrl=function(){return this.urlBuilder.buildUrl(this.profileId,this.context,this.integrationMode,this.adapterVersion,this.wrapperVersion)},Pt);function Pt(t,e,i,r,o,n,a,s,d,c,l){this.slots=t,this.context=e,this.metricsManager=i,this.urlBuilder=r,this.profileId=o,this.integrationMode=n||vt.Unspecified,this.networkId=a,this.adapterVersion=s,this.privacyWrapper=d,this.wrapperVersion=c,this.viewportComputer=l}function Rt(t){var e={slots:void 0,time_to_next_call:0};return void 0!==t.exd&&(void 0!==t.exd.time_to_next_call&&(e.time_to_next_call=t.exd.time_to_next_call),e.slots=t.exd.slots,delete t.exd),e}function At(){var i=(new Date).getTime();return"undefined"!=typeof performance&&"function"==typeof performance.now&&(i+=performance.now()),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(t){var e=(i+16*Math.random())%16|0;return i=Math.floor(i/16),("x"===t?e:3&e|8).toString(16)})}var Ot=function(t,e,i,r,o,n,a,s,d){this.slotId=At().replace(/-/g,""),this.impId=t,this.zoneId=e,this.nativeCallback=i,this.transactionId=r,this.sizes=o,this.publisherSubId=n,this.mediaTypes=a,this.video=s,this.ext=d},Dt=function(t,e,i,r,o,n,a,s,d,c){this.playersize=t,this.mimes=e,this.protocols=i,this.maxduration=r,this.api=o,this.skip=n,this.placement=a,this.playbackmethod=s,this.minduration=d,this.startdelay=c};var Bt=(kt.prototype.sendRequest=function(t){this.url=t,this.sendTime=d.CreateRunning(),this.builder.withCdbCallStartElapsed(this.timer.elapsed())},kt.prototype.requestReceived=function(t){void 0===t&&(t=!1),this.builder.withElapsed(function(t){if(window.performance&&window.performance.getEntries)for(var e=window.performance.getEntries(),i=e.length-1;0<=i;--i){var r=e[i];if(r.name===t&&r.duration)return Math.round(r.duration)}}(this.url)||this.sendTime.elapsed()),this.builder.withCdbCallEndElapsed(this.timer.elapsed()),this.builder.withIsTimeout(t)},kt.prototype.setTargeting=function(){this.hasSetTargetingBeenCalled||(this.builder.withSetTargetingElapsed(this.timer.elapsed()),this.hasSetTargetingBeenCalled=!0)},kt.prototype.finish=function(t,e){if(this.builder.withAdapterEndElapsed(this.timer.elapsed()),this.builder.withSid(t),this.builder.withRequestGroupId(At()),e&&0!==e.length)for(var i=0,r=e;i<r.length;i++){var o=r[i];this.builder.addSlot(o.imp_id,o.zone_id,o.ad_unit_id,o.is_dsc)}else this.builder.addSlot("");var n=kt.getLastCdbTiming();return void 0!==n&&(this.builder.withTimeToFirstByte(kt.computeTimeToFirstByte(n)),this.builder.withConnectionEstablishmentTime(kt.computeConnectionEstablishmentTime(n)),this.builder.withDomainLookupTime(kt.computeDomainLookupTime(n))),this.build()},kt.getLastCdbTiming=function(){if(void 0!==window.performance&&void 0!==window.performance.getEntriesByType&&"function"==typeof window.performance.getEntriesByType){var t=window.performance.getEntriesByType("resource");if(void 0!==t){var e=t.filter(function(t){return 0<=t.name.indexOf("cdb")});return void 0!==e&&0<e.length?e[e.length-1]:void 0}}},kt.computeTimeToFirstByte=function(t){var e=t.responseStart,i=t.requestStart;if(void 0!==e&&void 0!==i)return e-i},kt.computeConnectionEstablishmentTime=function(t){var e=t.connectEnd-t.connectStart;return isNaN(e)?void 0:e},kt.computeDomainLookupTime=function(t){var e=t.domainLookupEnd-t.domainLookupStart;return isNaN(e)?void 0:e},kt.prototype.build=function(){return this.builder.build()},kt);function kt(t,e,i){this.hasSetTargetingBeenCalled=!1,this.builder=t,this.timer=void 0!==e?d.CreateWithStartTime(e):d.CreateRunning();var r=this.timer.elapsed();this.builder.withAdapterStartElapsed(r),this.builder.withPageLoadElapsed(d.TimeSincePageLoad()-r),void 0!==i&&this.builder.withAdapterTimeout(i)}function xt(t){var e="number"==typeof window.PREBID_TIMEOUT?window.PREBID_TIMEOUT:void 0;return t&&e?Math.min(t,e):t||e||void 0}var Ft=function(t,e){this.top=t,this.left=e},Lt=function(t,e,i,r){this.width=t,this.height=e,this.scrollTop=i,this.scrollLeft=r},Nt=(Ut.getHighestAccessibleWindow=function(t){var e=t,i=!1;try{for(;e.parent.document!==e.document;){if(!e.parent.document){i=!0;break}e=e.parent}}catch(t){i=!0}return{topFrame:e,err:i}},Ut.getHighestAccessibleUrl=function(t){var e=t.topFrame;if(!t.err)return e.location.href;try{var i=e.top.location.href;if(i)return i}catch(t){}try{var r=e.location.ancestorOrigins;if(r)return r[r.length-1]}catch(t){}return e.document.referrer},Ut.inIframe=function(){try{return window.self!==window.top}catch(t){return!0}},Ut);function Ut(){}var Wt=(qt.prototype.getViewport=function(){var t=Nt.getHighestAccessibleWindow(window).topFrame,e=t.document,i=t.innerWidth||e.documentElement.clientWidth,r=t.innerHeight||e.documentElement.clientHeight,o=e.documentElement.scrollTop||e.body&&e.body.scrollTop||0,n=e.documentElement.scrollLeft||e.body&&e.body.scrollLeft||0;return new Lt(i,r,o,n)},qt.prototype.getSlotPosition=function(t){var e=t.impId,i=document.getElementById(e);if(null!==i){var r=i.getBoundingClientRect();return new Ft(r.top,r.left)}},qt);function qt(){}var Gt,Kt,Ht=function(){return(Ht=Object.assign||function(t){for(var e,i=1,r=arguments.length;i<r;i++)for(var o in e=arguments[i])Object.prototype.hasOwnProperty.call(e,o)&&(t[o]=e[o]);return t}).apply(this,arguments)};(Kt=Gt=Gt||{}).Native="native",Kt.Banner="banner",Kt.Video="video";var Vt=(zt.prototype.hasValidNativeParams=function(t){return!(t.nativeParams&&(t.nativeParams.image&&!0!==t.nativeParams.image.sendId||t.nativeParams.icon&&!0!==t.nativeParams.icon.sendId||t.nativeParams.clickUrl&&!0!==t.nativeParams.clickUrl.sendId||t.nativeParams.displayUrl&&!0!==t.nativeParams.displayUrl.sendId||t.nativeParams.privacyLink&&!0!==t.nativeParams.privacyLink.sendId||t.nativeParams.privacyIcon&&!0!==t.nativeParams.privacyIcon.sendId))},zt.prototype.setEnableSendAllBids=function(t){this.enableSendAllBids=t},zt.prototype.buildCdbUrl=function(){return this.url},zt.prototype.buildCdbRequest=function(){if(this.cache.silentModeEnabled())return M.Debug("Request ignored because the global silent mode is enabled"),void this.metricsManager.incSilentModeRequestCount();if(this.requestBuilder.isValid()){var t=Math.min((this.timeout||5e3)+1e3,5e3);return this.adBlockFlagManager.setAdBlockFlagTimer(t),this.timer.sendRequest(this.url),this.requestBuilder.getRequest()}M.Debug("Request ignored because it doesnt contain any slot")},zt.GetAllAdapters=function(){return window.Criteo.prebid_adapters},zt.GetAdapter=function(t){var e="string"==typeof t?t:t.bidRequests[0].auctionId,i=zt.GetAllAdapters();if(i&&e in i)return i[e]},zt.createCriteoNativeAdWithCallback=function(t,e,i){return window.criteo_prebid_native_slots=window.criteo_prebid_native_slots||{},window.criteo_prebid_native_slots[t]={callback:i,payload:e},'<script type="text/javascript">\n            var win = window;\n            for (var i = 0; i < 10; ++i) {\n                win = win.parent;\n                if (win.criteo_prebid_native_slots) {\n                    var responseSlot = win.criteo_prebid_native_slots["'+t+'"];\n                    responseSlot.callback(responseSlot.payload);\n                    break;\n                }\n            }\n        <\/script>'},zt.createPrebidNativeAd=function(t){return{title:t.products[0].title,body:t.products[0].description,sponsoredBy:t.advertiser.description,icon:t.advertiser.logo,image:t.products[0].image,clickUrl:t.products[0].click_url,privacyLink:t.privacy.optout_click_url,privacyIcon:t.privacy.optout_image_url,cta:t.products[0].call_to_action,price:t.products[0].price,impressionTrackers:t.impression_pixels.map(function(t){return t.url})}},zt.prototype.getBidRequestForSlot=function(t){for(var e=0,i=this.bidRequests;e<i.length;e++){var r=i[e];if(r.adUnitCode===t.impid&&(!r.params.zoneId||parseInt(r.params.zoneId,10)===t.zoneid))return r}},zt.getVideoInfoFromBidRequest=function(t){if(zt.hasVideoMediaType(t))return new Dt(t.mediaTypes.video.playerSize,t.mediaTypes.video.mimes,t.mediaTypes.video.protocols,t.mediaTypes.video.maxduration,t.mediaTypes.video.api,t.params.video.skip,t.params.video.placement,t.params.video.playbackmethod,t.params.video.minduration,t.params.video.startdelay)},zt.hasVideoMediaType=function(t){return void 0!==t.params&&void 0!==t.params.video&&!(void 0===t.mediaTypes||void 0===t.mediaTypes.video)},zt.prototype.interpretResponse=function(t,e){this.timer.requestReceived(),this.adBlockFlagManager.disableAdBlockFlagTimer();var i=Rt(t),r={};if(void 0!==i.slots)for(var o=0,n=i.slots;o<n.length;o++)r[(I=n[o]).imp_id]=I;var a,s,d,c,l,u,p,h,f,g,v,m=[];if(t.slots&&Array.isArray(t.slots))for(var y=0,C=t.slots;y<C.length;y++){var I=C[y],b=this.getBidRequestForSlot(I);if(b)if(!0===window.criteo_pubtag.context.isAdBlocked){if(void 0!==(a=I.slotid,s=I.impid,d=I.cpm,c=I.width,l=I.height,u=I.zoneid,p=b.params.nativeCallback,h=I.native,f=I.displayurl,g=I.creative,v=I.deal,T=void 0!==p&&void 0!==h?new dt(a,s,d,c,l,u,p,h,v):void 0===f||void 0!==g&&"<script"!==g.substr(0,7)?void 0!==g?new ot(a,s,d,c,l,u,g,v):void 0:new tt(a,s,d,c,l,u,f,v))&&St.tryInsertPlaceholder(b.adUnitCode)){var _=St.insertAdIFrame(b.adUnitCode);if(null!=_){var E=new P(_.contentDocument);T.GenerateEvent(E).eval(window.criteo_pubtag)}}}else{var w=b.bidId,S=I.ttl||r[I.slotid]&&r[I.slotid].ttl||60,T={requestId:w,adId:At(),cpm:I.cpm,currency:I.currency,netRevenue:!0,ttl:S,creativeId:w,width:I.width,height:I.height,dealId:I.deal};if(I.native)if(b.params.nativeCallback)T.ad=zt.createCriteoNativeAdWithCallback(w,I.native,b.params.nativeCallback);else{if(this.enableSendAllBids){M.Error("Not supporting non mediation mode");continue}T.native=zt.createPrebidNativeAd(I.native),T.mediaType=Gt.Native}else I.video?(T.vastUrl=I.displayurl,T.mediaType=Gt.Video):T.ad=I.creative;m.push(T)}else M.Error("Unable to bid request for slot "+I)}return this.cache.handleResponse(this.slots,t,i,!1),this.metricsManager.storeMetric(this.timer.finish(t.sid,i.slots)),this.cache.clearExpiredItems(),m},zt.prototype.handleBidWon=function(t){this.updateMetric(t,function(t){t.adapterBidWon=!0})},zt.prototype.handleBidTimeout=function(){this.timer.requestReceived(!0),this.metricsManager.storeMetric(this.timer.finish()),this.cache.clearExpiredItems()},zt.prototype.handleSetTargeting=function(t){var e=this;this.timer.setTargeting(),this.updateMetric(t,function(){return e.timer.build()})},zt.prototype.updateMetric=function(t,e){for(var i=this.metricsManager.getMetrics(!1),r=0;r<i.length;++r)for(var o=0,n=i[r].slots;o<n.length;o++){var a=n[o];if(a.adUnitId===t.adUnitCode){var s=e(a);s&&(i[r]=s)}}this.metricsManager.setMetrics(i)},zt);function zt(t,e,i,r,o){var n,a,s;this.enableSendAllBids=!0,this.timeout=xt(r.timeout),this.metricsManager=new Et(t,e,o),this.metricBuilder=new pt(this.metricsManager),this.timer=new Bt(this.metricBuilder,r.auctionStart,this.timeout),this.adBlockFlagManager=v.create(),this.adBlockFlagManager.adBlockFlagEnabled()&&(t=280,window.criteo_pubtag.context.isAdBlocked=!0,n=new Wt),this.auctionId=r.auctionId,this.bidRequests=i,this.slots=[];for(var d,c=!0,l=0,u=i;l<u.length;l++){var p=u[l],h=void 0;p.fpd&&p.fpd.context&&(h=p.fpd.context),p.params.ext&&(h=Ht(Ht({},h),p.params.ext)),c=this.hasValidNativeParams(p),this.slots.push(new Ot(p.adUnitCode,p.params.zoneId,p.params.nativeCallback,p.transactionId,p.sizes.map(function(t){return new w(t[0],t[1])}),p.params.publisherSubId,p.mediaTypes,zt.getVideoInfoFromBidRequest(p),h)),a=p.params.networkId||a,d=r.ceh,window.criteo_pubtag.context.ceh=d,p.params.integrationMode&&(s=It(p.params.integrationMode))}c||M.Warning("All native assets containing URL should be sent as placeholders with sendId(icon, image, clickUrl, privacyLink, privacyIcon)");var f={};r.gdprConsent&&(void 0!==r.gdprConsent.consentString&&(f.consentData=r.gdprConsent.consentString),void 0!==r.gdprConsent.gdprApplies&&(f.gdprApplies=!!r.gdprConsent.gdprApplies),f.version=r.gdprConsent.apiVersion,2===f.version?r.gdprConsent.vendorData&&r.gdprConsent.vendorData.vendor&&r.gdprConsent.vendorData.vendor.consents&&void 0!==r.gdprConsent.vendorData.vendor.consents[m.toString()]&&(f.consentGiven=r.gdprConsent.vendorData.vendor.consents[m.toString()]):r.gdprConsent.vendorData&&r.gdprConsent.vendorData.vendorConsents&&void 0!==r.gdprConsent.vendorData.vendorConsents[m.toString(10)]&&(f.consentGiven=!!r.gdprConsent.vendorData.vendorConsents[m.toString(10)]));var g={uspString:r.uspConsent};window.criteo_pubtag.context.publisherExt=r.publisherExt,window.criteo_pubtag.context.userExt=r.userExt,this.cache=new G(window.criteo_pubtag.context,this.slots,a),this.requestBuilder=new Mt(this.cache.filterNoBidSlots(this.slots),window.criteo_pubtag.context,this.metricsManager,new bt(!1),t,s,a,e,{ccpaIabConsent:g,gdprConsent:f},o,n),this.url=this.requestBuilder.getUrl(),window.Criteo.prebid_adapters=window.Criteo.prebid_adapters||{},window.Criteo.prebid_adapters[this.auctionId]=this}var jt=(Yt.prototype.getCMPFrame=function(){for(var t,e=this.currentWindow,i=0;i<10;++i){try{e.frames.__uspapiLocator&&(t=e)}catch(t){}if(e===this.currentWindow.top)break;e=e.parent}return t},Yt.prototype.hasCallerFunctionInWindow=function(){return"function"==typeof this.currentWindow.__uspapi},Yt.prototype.readyToRetrieve=function(){return this.hasCallerFunctionInWindow()||void 0!==this.getCMPFrame()},Yt.prototype.retrieveConsent=function(i){var t=this,r=d.CreateRunning(),o=!1,n=setTimeout(function(){o=!0,M.Warning("Timeout: Unable to resolve CCPA consent after "+t.timeout+"ms"),i(void 0)},this.timeout);this.executeCommand("getUSPData",1,function(t,e){o||(clearTimeout(n),e?(M.Debug("CCPA consent retrieved in "+r.elapsed()+"ms"),Yt.processResponseData(t,i)):(M.Warning("Error retrieving CCPA consent data from CMP"),i(void 0)))})},Yt.processResponseData=function(t,e){t?e(t):(M.Warning("Unable to read CCPA consent data from CMP"),e(void 0))},Yt.prototype.executeCommand=function(t,e,i){var n=this;if(!this.hasCallerFunctionInWindow()){M.Debug("No CCPA CMP defined on current frame");var a=this.getCMPFrame();this.currentWindow.__uspapi=function(t,e,i){if(!a)return M.Warning("CCPA CMP not found in any frame"),void i({msg:"CCPA CMP not found in any frame"},!1);var r=Math.random().toString(10),o={__uspapiCall:{command:t,parameter:e,callId:r}};n.uspapiCallbacks[r]=i,a.postMessage(o,"*")},this.currentWindow.addEventListener("message",function(t){var e="string"==typeof t.data?p(t.data):t.data;if(e&&e.__uspapiReturn&&e.__uspapiReturn.callId&&e.__uspapiReturn.returnValue){var i=e.__uspapiReturn;n.uspapiCallbacks&&n.uspapiCallbacks[i.callId]&&(n.uspapiCallbacks[i.callId](i.returnValue,i.success),delete n.uspapiCallbacks[i.callId])}},!1)}this.currentWindow.__uspapi(t,e,i)},Yt.prototype.hasUserOptOut=function(t){return!(!t||!t.uspString||"1YNY"===t.uspString.toUpperCase()||"1YNN"===t.uspString.toUpperCase()||"1YN-"===t.uspString.toUpperCase()||"1-N-"===t.uspString.toUpperCase()||"1---"===t.uspString)},Yt);function Yt(t,e){void 0===e&&(e=parseInt("50",10)),this.uspapiCallbacks={},this.currentWindow=t,this.timeout=e}var Xt=(Jt.prototype.getReadyToRetrieveProvider=function(){return this.gdprPrivacyProvider.hasCallerFunctionInFrame()||void 0!==this.gdprPrivacyProvider.getCMPFrame()?this.gdprPrivacyProvider:void 0},Jt.prototype.retrieveConsentForPassback=function(t){var e=this.getReadyToRetrieveProvider();void 0===e&&(M.Warning("No compatible GDPR privacy provider found"),t(void 0)),e===this.gdprPrivacyProvider&&this.gdprPrivacyProvider.retrieveConsentForPassback(t)},Jt.prototype.retrieveConsent=function(t){var e=this.getReadyToRetrieveProvider();void 0===e&&(M.Warning("No compatible GDPR privacy provider found"),t(void 0)),null==e||e.retrieveConsent(t)},Jt.prototype.readyToRetrieve=function(){return this.gdprPrivacyProvider.readyToRetrieve()},Jt);function Jt(t,e){this.gdprPrivacyProvider=t}var Zt=(Qt.prototype.getCMPFrame=function(){for(var t,e=this.currentWindow,i=0;i<10;++i){try{e.frames.__tcfapiLocator&&(t=e)}catch(t){}if(e===this.currentWindow.top)break;e=e.parent}return t},Qt.prototype.hasCallerFunctionInFrame=function(){return"function"==typeof this.currentWindow.__tcfapi},Qt.prototype.readyToRetrieve=function(){return this.hasCallerFunctionInFrame()||void 0!==this.getCMPFrame()},Qt.prototype.pingWithTimeout=function(i,r,t,e,o){function n(t,e){M.Warning(e),clearTimeout(t),o()}var a=this;return setTimeout(function(){var e=setTimeout(function(){n(r,"Timeout: Unable to get TCFv2 ping return after "+t+"ms")},t);a.executeCommand("ping",2,function(t){clearTimeout(e),M.Debug("TCFv2 CMP ping returned in "+i.elapsed()+"ms"),"error"===t.cmpStatus?n(r,"Error status on ping to TCFv2 CMP"):(!0!==t.cmpLoaded&&n(r,"TCFv2 ping returned cmpLoaded which is not true"),M.Debug("TCFv2 ping returned cmpLoaded which is true"))})},e)},Qt.prototype.retrieveConsent=function(i){var t=this,r=d.CreateRunning(),o=!1,n=setTimeout(function(){o=!0,M.Warning("Timeout: Unable to resolve TCFv2 consent after "+t.timeout+"ms"),i(void 0)},this.timeout),a=this.pingWithTimeout(r,n,this.pingTimeout,this.pingDelay,function(){o=!0,M.Warning("Timeout: Unable to ping TCFv2 API after "+t.pingTimeout+"ms"),i(void 0)});this.executeCommand("getTCData",2,function(t,e){clearTimeout(a),o||(clearTimeout(n),e?(M.Debug("TCFv2 consent retrieved in "+r.elapsed()+"ms"),Qt.processResponseData(t,i)):(M.Warning("Error retrieving TCFv2 consent data from CMP"),i(void 0)))},[91])},Qt.processResponseData=function(t,e){if(t){var i={};void 0!==t.tcData&&(i.consentData=t.tcData),void 0!==t.gdprApplies&&(i.gdprApplies=!!t.gdprApplies),t.vendor&&t.vendor.consents&&void 0!==t.vendor.consents[91..toString()]&&(i.consentGiven=t.vendor.consents[91..toString()]),i.version=t.tcfPolicyVersion?t.tcfPolicyVersion:2,e(i)}else M.Warning("Unable to read GDPR consent data from CMP"),e(void 0)},Qt.prototype.executeCommand=function(t,e,i,r){var a=this;if(!this.hasCallerFunctionInFrame()){M.Debug("No TCFv2 CMP defined on current frame");var s=this.getCMPFrame();this.currentWindow.__tcfapi=function(t,e,i,r){if(!s)return M.Warning("TCFv2 CMP not found in any frame"),void i({msg:"TCFv2 CMP not found in any frame"},!1);var o=Math.random().toString(10),n={__tcfapiCall:{command:t,version:e,parameter:r,callId:o}};a.cmpCallbacks[o]=i,s.postMessage(n,"*")},this.currentWindow.addEventListener("message",function(t){var e="string"==typeof t.data?p(t.data):t.data;if(e&&e.__tcfapiReturn&&e.__tcfapiReturn.callId&&e.__tcfapiReturn.returnValue){var i=e.__tcfapiReturn;a.cmpCallbacks&&a.cmpCallbacks[i.callId]&&"function"==typeof a.cmpCallbacks[i.callId]&&(a.cmpCallbacks[i.callId](i.returnValue,i.success),delete a.cmpCallbacks[i.callId])}},!1)}this.currentWindow.__tcfapi(t,e,i,r)},Qt);function Qt(t,e,i,r){void 0===e&&(e=parseInt("10000",10)),void 0===i&&(i=Math.min(e,parseInt("50",10))),void 0===r&&(r=Math.min(e,parseInt("1000",10))),this.cmpCallbacks={},this.currentWindow=t,this.timeout=e,this.pingTimeout=i,this.pingDelay=r}var $t=(te.prototype.send=function(t,e,i,r){var o=void 0!==this.data?"POST":"GET",n=this.getXMLHttpRequest(o,t,e,i,r);if(void 0!==n)n.send(this.data);else{var a=this.getXDomainRequest(o,t,e,i,r);void 0!==a&&a.send(this.data)}},te.prototype.getXMLHttpRequest=function(t,e,i,r,o){var n=new XMLHttpRequest;if("withCredentials"in n)return n.open(t,this.url,!0),n.timeout=o||te.LOCAL_PASSBACK_TIMEOUT,this.contentType?n.setRequestHeader("Content-type",this.contentType):"POST"===t&&n.setRequestHeader("Content-type","application/x-www-form-urlencoded"),n.withCredentials=this.withCredentials,n.onload=function(){4===n.readyState&&200===n.status?e(n.responseText):i(n.readyState,n.status)},n.onerror=function(){i(void 0,void 0)},r&&(n.ontimeout=r),n},te.prototype.getXDomainRequest=function(t,e,i,r,o){if("undefined"!=typeof XDomainRequest){var n=new XDomainRequest;return n.timeout=o||te.LOCAL_PASSBACK_TIMEOUT,n.open(t,this.url),n.onload=function(){void 0!==n.responseText?e(n.responseText):i(void 0,void 0)},n.onerror&&(n.onerror=function(){i(void 0,void 0)}),n.ontimeout&&r&&(n.ontimeout=r),n}},te.LOCAL_PASSBACK_TIMEOUT=3e4,te);function te(t,e,i,r){void 0===r&&(r=!0),this.url=t,this.data=e,this.contentType=i,this.withCredentials=r}var ee,ie,re=((ee=function(t,e){return(ee=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}ee(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(oe,ie=H),oe.prototype.setGDPRConsent=function(t){this.gdprConsent=t},oe.prototype.setCCPAIabConsent=function(t){this.ccpaIabConsent=t},oe.prototype.getMetricBuilder=function(){return this.metricBuilder},oe.prototype.getMetricsManager=function(){return this.metricsManager},oe.prototype.eval=function(t){this.evalWithTimeout(t,void 0)},oe.prototype.evalWithTimeout=function(t,e){var r=this,i=oe.getCriteoAdapterBidRequest(),o=oe.getRequestAuctionStart(i),n=e||xt(i&&i.timeout),a=new Bt(this.metricBuilder,o,n),s=new Mt(this.slots,t.context,this.metricsManager,this.urlBuilder,this.profileId,this.integrationMode,this.networkId,this.adapterVersion,{ccpaIabConsent:this.ccpaIabConsent,gdprConsent:this.gdprConsent},void 0,this.viewportComputer);if(s.isValid()&&"undefined"!=typeof JSON){var d=s.getRequest(),c=JSON.stringify(d),l=s.getUrl(),u=new $t(l,c,"application/x-www-form-urlencoded");a.sendRequest(l),u.send(function(t){try{a.requestReceived();var e=p(t)||{},i=Rt(e);void 0!==r.callbackSuccess&&r.callbackSuccess(JSON.stringify(e),i),r.metricsManager.storeMetric(a.finish(e.sid,i.slots))}catch(t){M.Error("Error onSuccess: "+t.toString())}},function(t,e){try{a.requestReceived(),void 0!==r.callbackError&&r.callbackError(t,e),r.metricsManager.storeMetric(a.finish())}catch(t){M.Error("Error onError: "+t.toString())}},function(){try{a.requestReceived(!0),void 0!==r.callbackTimeout&&r.callbackTimeout(),r.metricsManager.storeMetric(a.finish())}catch(t){M.Error("Error onTimeout: "+t.toString())}},this.timeout)}else this.callbackError(void 0,void 0)},oe.getCriteoAdapterBidRequest=function(){try{return window.pbjs._bidsRequested.find(function(t){return"criteo"===t.bidderCode})}catch(t){return}},oe.getRequestAuctionStart=function(t){return t&&t.auctionStart},oe.NAME="directbidding",oe);function oe(t,e,i,r,o,n,a,s,d,c,l,u){var p=ie.call(this,oe.NAME)||this;return p.profileId=t,p.urlBuilder=e,p.slots=i,p.metricsManager=u||new Et(t),p.metricBuilder=new pt(p.metricsManager),p.callbackSuccess=r,p.callbackError=o,p.callbackTimeout=n,p.timeout=a,p.networkId=s,p.integrationMode=d,p.adapterVersion=c,p.viewportComputer=l,p}var ne,ae,se=((ne=function(t,e){return(ne=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}ne(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(de,ae=H),de.prototype.eval=function(e){var i=this,t=this.gdprPrivacyProvider.readyToRetrieve(),r=this.ccpaPrivacyProvider.readyToRetrieve();if(t||r){var o,n,a=[];t&&a.push(y),r&&a.push(jt),t&&this.gdprPrivacyProvider.retrieveConsent(function(t){a.splice(a.indexOf("GDPR"),1),0===a.length?i.evalWithCmp(e,t,n):o=t}),r&&this.ccpaPrivacyProvider.retrieveConsent(function(t){a.splice(a.indexOf("CCPA"),1),0===a.length?i.evalWithCmp(e,o,t):n=t})}else this.evalWithCmp(e,void 0,void 0)},de.prototype.evalWithCmp=function(t,e,i){var r=this;if(this.cache.silentModeEnabled())return M.Debug("Request ignored because the global silent mode is enabled"),this.getMetricsManager().incSilentModeRequestCount(),void this.callbackSuccess("",void 0);setTimeout(function(){return r.onTimeout()},this.timeout||3e3),this.directBiddingEvent.setGDPRConsent(e),this.directBiddingEvent.setCCPAIabConsent(i),this.directBiddingEvent.evalWithTimeout(t,this.timeout)},de.prototype.onSuccess=function(t,e){if(this.hasResponded=!0,void 0!==e){var i=p(t);this.cache.handleResponse(this.slots,i,e,this.hasTimeouted)}this.hasTimeouted||this.callbackSuccess(t,e),this.cache.clearExpiredItems()},de.prototype.onError=function(t,e){this.hasResponded=!0,this.hasTimeouted||this.callbackError(t,e),this.cache.clearExpiredItems()},de.prototype.onHttpTimeout=function(){this.hasResponded=!0,this.hasTimeouted||this.callbackTimeout(),this.cache.clearExpiredItems()},de.prototype.onTimeout=function(){if(!this.hasResponded){this.hasTimeouted=!0;var t=this.cache.getCachedBids(this.slots);0===t.length?this.callbackTimeout():(M.Debug("Cached bids returned because of timeout: ['"+t.map(function(t){return t.impid}).join("', '")+"']"),this.getMetricBuilder().withCachedBidsReturned(t),this.callbackSuccess(JSON.stringify({slots:t}),void 0))}},de.prototype.getMetricBuilder=function(){return this.directBiddingEvent.getMetricBuilder()},de.prototype.getMetricsManager=function(){return this.directBiddingEvent.getMetricsManager()},de.prototype.getBidCache=function(){return this.cache},de.NAME="directbidding",de);function de(t,e,i,r,o,n,a,s,d,c,l,u,p,h){var f=ae.call(this,de.NAME)||this,g=Math.max(10*(a||3e3),3e3);return f.cache=new G(window.criteo_pubtag.context,i,s),f.directBiddingEvent=new re(t,e,f.cache.filterNoBidSlots(i),function(t,e){return f.onSuccess(t,e)},function(t,e){return f.onError(t,e)},function(){return f.onHttpTimeout()},g,s,d,c,l,u),f.slots=i,f.callbackSuccess=r,f.callbackError=o,f.callbackTimeout=n,f.timeout=a,f.hasTimeouted=!1,f.hasResponded=!1,f.gdprPrivacyProvider=p||new Xt(new y(window),new Zt(window)),f.ccpaPrivacyProvider=h||new jt(window),f}var ce={prebid:"criteo_fast_bid",standalone:"criteo_fast_bid_standalone",index:"criteo_fast_bid_index"};var le=(ue.LoadPolyfills=function(){ue.DefineIsArray(),ue.DefineIndexOf(),ue.DefineFilter()},ue.DefineIsArray=function(){Array.isArray||(Array.isArray=function(t){return"[object Array]"===Object.prototype.toString.call(t)})},ue.DefineIndexOf=function(){Array.prototype.indexOf||(Array.prototype.indexOf=function(t,e){if(void 0===e&&(e=0),void 0===this)throw new TypeError("'this' is null or not defined");var i=this.length;if(0===i)return-1;if(i<=e)return-1;for(var r=Math.max(0<=e?e:i-Math.abs(e),0);r<i;){if(r in this&&this[r]===t)return r;r++}return-1})},ue.DefineFilter=function(){Array.prototype.filter||(Array.prototype.filter=function(t){if(void 0===this||void 0===this)throw new TypeError;var e=this.length;if("function"!=typeof t)throw new TypeError;for(var i=[],r=2<=arguments.length?arguments[1]:void 0,o=0;o<e;o++)if(o in this){var n=this[o];t.call(r,n,o,this)&&i.push(n)}return i})},ue);function ue(){}var pe,he,fe=(ge.SetCookie=function(t,e,i,r,o){void 0===o&&(o=!1);var n=r||document,a=n.location.hostname,s=new Date;s.setTime(s.getTime()+60*i*60*1e3);var d="expires="+s.toUTCString();if(!o)return ge.setCookieString(t,e,d,void 0,n),a;for(var c=a.split("."),l=0;l<c.length;++l){var u=c.slice(c.length-l-1,c.length).join(".");ge.setCookieString(t,e,d,u,n);var p=ge.GetCookie(t,r);if(p&&p===e)return u}return a},ge.DeleteCookie=function(t,e,i){void 0===i&&(i=!1),ge.SetCookie(t,"",0,e,i)},ge.GetCookie=function(t,e){for(var i=0,r=(e||document).cookie.split(";");i<r.length;i++){var o=r[i],n=o.substr(0,o.indexOf("=")).replace(/^\s+|\s+$/g,""),a=o.substr(o.indexOf("=")+1);if(n===t)return decodeURIComponent(a)}},ge.setCookieString=function(t,e,i,r,o){var n=t+"="+encodeURIComponent(e)+";"+i+";";r&&""!==r&&(n+="domain=."+r+";"),o.cookie=n+"path=/"},ge);function ge(){}function ve(e,i){try{return decodeURIComponent(e)}catch(t){return void 0!==i?i:e}}(he=pe=pe||{})[he.None=0]="None",he[he.Cookie=1]="Cookie",he[he.LocalStorage=2]="LocalStorage";var me,ye,Ce=(Ie.isSafariBrowser=function(){return null!==navigator.userAgent.match(Ie.SAFARI_CHECK_REGEX)},Ie.isAndroidBrowser=function(){return-1<navigator.userAgent.toLowerCase().indexOf("android")},Ie.isFirefoxBrowser=function(){return-1<navigator.userAgent.toLowerCase().indexOf("firefox")},Ie.isEdgeChromiumBrowser=function(){return-1<navigator.userAgent.toLowerCase().indexOf("edg/")},Ie.isEdgeLegacyBrowser=function(){return-1<navigator.userAgent.toLowerCase().indexOf("edge/")},Ie.prototype.synchronizeCriteoUid=function(t,e){var i=this;if((t||Ie.isSafariBrowser()||Ie.isAndroidBrowser()||Ie.isFirefoxBrowser()||Ie.isEdgeChromiumBrowser()||Ie.isEdgeLegacyBrowser())&&(e&&(this.tcfV2ConsentString=e),this.topWin.addEventListener))if("complete"===this.topDoc.readyState)this.appendGumIframeIfDoesNotExist();else{var r=function(){i.topDoc.removeEventListener("DOMContentLoaded",r),i.topWin.removeEventListener("load",r),i.appendGumIframeIfDoesNotExist()};this.topWin.addEventListener("load",r,!1),this.topDoc.addEventListener("DOMContentLoaded",r,!1)}},Ie.prototype.appendGumIframeIfDoesNotExist=function(){var n=this,t=this.createGumIframe();this.topDoc.getElementById(Ie.SYNCFRAME_ID)||(this.topWin.addEventListener("message",function(t){var e=t.data;if(e&&e.isCriteoMessage)if(t.stopImmediatePropagation(),e.optout)n.setClientSideOptOut(),n.deleteClientSideUid(),n.deleteClientSideIdfs(),n.deleteClientSideSecureId(),n.deleteBundle();else{if(e.uid&&n.setClientSideUid(e.uid),e.idfs&&n.setClientSideIdfs(e.idfs),e.callbacks)for(var i=0,r="string"==typeof e.callbacks?[e.callbacks]:e.callbacks;i<r.length;i++){var o=r[i];(new Image).src=o}else e.bundle&&n.setBundle(e.bundle);e.removeSid?n.deleteClientSideSecureId():e.sid&&n.setClientSideSecureId(e.sid)}},!0),this.topDoc.body.appendChild(t))},Ie.prototype.getClientSideUid=function(){return this.getFromAllStorages(Ie.GUID_COOKIE_NAME)},Ie.prototype.setClientSideUid=function(t){this.writeOnAllStorages(Ie.GUID_COOKIE_NAME,t,Ie.GUID_RETENTION_TIME_HOUR)},Ie.prototype.deleteClientSideUid=function(){this.deleteFromAllStorage(Ie.GUID_COOKIE_NAME)},Ie.prototype.getBundle=function(){return this.getFromAllStorages(Ie.BUNDLE_COOKIE_NAME)},Ie.prototype.setBundle=function(t){this.writeOnAllStorages(Ie.BUNDLE_COOKIE_NAME,t,Ie.GUID_RETENTION_TIME_HOUR)},Ie.prototype.deleteBundle=function(){this.deleteFromAllStorage(Ie.BUNDLE_COOKIE_NAME)},Ie.prototype.getClientSideOptOut=function(){var t=this.getFromAllStorages(Ie.OPTOUT_COOKIE_NAME);return{value:"1"===t.value,origin:t.origin}},Ie.prototype.setClientSideOptOut=function(){this.writeOnAllStorages(Ie.OPTOUT_COOKIE_NAME,"1",Ie.OPTOUT_RETENTION_TIME_HOUR)},Ie.prototype.deleteClientSideIdfs=function(){this.deleteFromAllStorage(Ie.IDFS_COOKIE_NAME)},Ie.prototype.getClientSideIdfs=function(){return this.getFromAllStorages(Ie.IDFS_COOKIE_NAME)},Ie.prototype.setClientSideIdfs=function(t){this.writeOnAllStorages(Ie.IDFS_COOKIE_NAME,t,Ie.GUID_RETENTION_TIME_HOUR)},Ie.prototype.getClientSideSecureId=function(){return this.getFromAllStorages(Ie.SECURE_ID_COOKIE_NAME)},Ie.prototype.setClientSideSecureId=function(t){this.writeOnAllStorages(Ie.SECURE_ID_COOKIE_NAME,t,Ie.GUID_RETENTION_TIME_HOUR)},Ie.prototype.deleteClientSideSecureId=function(){this.deleteFromAllStorage(Ie.SECURE_ID_COOKIE_NAME)},Ie.prototype.getClientSideLocalWebId=function(){return this.getFromAllStorages(Ie.LOCAL_WEB_ID_COOKIE_NAME)},Ie.prototype.checkCookiesAreWriteable=function(){var t="cto_writeable";fe.SetCookie(t,"1",1,this.topDoc,!0);var e="1"===fe.GetCookie(t,this.topDoc);return fe.DeleteCookie(t,this.topDoc,!0),e},Ie.prototype.createGumIframe=function(){var t=this.topDoc.createElement("iframe");return t.src=this.buildSyncframeSrc(),t.id=Ie.SYNCFRAME_ID,t.style.display="none",t},Ie.prototype.writeOnAllStorages=function(t,e,i){this.localStorageEnabled&&this.localStorageHelper.setItem(t,e),fe.SetCookie(t,e,i,this.topDoc,!0)},Ie.prototype.getFromAllStorages=function(t){var e,i=fe.GetCookie(t,this.topDoc);return this.localStorageEnabled&&(e=this.localStorageHelper.getItem(t)||void 0),{value:i||e,origin:(i&&pe.Cookie)|(e&&pe.LocalStorage)}},Ie.prototype.deleteFromAllStorage=function(t){fe.DeleteCookie(t,this.topDoc,!0),this.localStorageEnabled&&this.localStorageHelper.removeItem(t)},Ie.prototype.getTld=function(){var t=fe.SetCookie(Ie.TLD_TEST_COOKIE_NAME,"test",1,this.topDoc,!0);return fe.DeleteCookie(Ie.TLD_TEST_COOKIE_NAME,this.topDoc,!0),t},Ie.prototype.buildSyncframeSrc=function(){var t,e,i=this.getClientSideUid(),r=this.getClientSideIdfs(),o=this.getClientSideOptOut(),n=this.getClientSideSecureId(),a=this.getClientSideLocalWebId(),s=this.getBundle(),d=this.getTld(),c=encodeURIComponent((t=this.topUrl,(e=document.createElement("a")).href=t,{protocol:e.protocol,host:e.host,hostname:e.hostname,pathname:"/"===e.pathname[0]?e.pathname.slice(1):e.pathname,search:e.search,href:e.href}).hostname),l=this.canWriteCookies,u="https://gum.criteo.com/syncframe?topUrl="+c+(this.isDebug?"&debug=1":"")+(this.tcfV2ConsentString?"&gdprString="+this.tcfV2ConsentString:"");return u+="#"+JSON.stringify({optout:o,uid:i,idfs:r,sid:n,origin:"publishertag",version:88,lwid:a,tld:d,bundle:s,topUrl:c,cw:l})},Ie.GUID_COOKIE_NAME="cto_idcpy",Ie.GUID_RETENTION_TIME_HOUR=9360,Ie.IDFS_COOKIE_NAME="cto_idfs",Ie.SECURE_ID_COOKIE_NAME="cto_sid",Ie.LOCAL_WEB_ID_COOKIE_NAME="cto_lwid",Ie.BUNDLE_COOKIE_NAME="cto_bundle",Ie.OPTOUT_COOKIE_NAME="cto_optout",Ie.OPTOUT_RETENTION_TIME_HOUR=43200,Ie.TLD_TEST_COOKIE_NAME="cto_pub_test_tld",Ie.SYNCFRAME_ID="criteo-syncframe",Ie.SAFARI_CHECK_REGEX=/^Mozilla\/5\.0 \([^)]+\) AppleWebKit\/[^ ]+ \(KHTML, like Gecko\) Version\/([^ ]+)( Mobile\/[^ ]+)? Safari\/[^ ]+$/i,Ie);function Ie(t,e,i){this.isDebug=e,this.topWin=t,this.topDoc=t.document,this.localStorageHelper=new o(this.topWin),this.localStorageEnabled=this.localStorageHelper.checkLocalStorage(),this.canWriteCookies=this.checkCookiesAreWriteable(),this.topUrl=i}(ye=me=me||{})[ye.InFriendlyIframe=1]="InFriendlyIframe",ye[ye.InUnfriendlyIframe=2]="InUnfriendlyIframe",ye[ye.DirectIntegration=3]="DirectIntegration";var be=(_e.prototype.getContextFlags=function(){var t="";return t+=this.debugMode?"&debug=1":"",t+=this.noLog?"&nolog=1":""},_e.prototype.getDisplayContext=function(t){return Nt.inIframe()?t.err?me.InUnfriendlyIframe:me.InFriendlyIframe:me.DirectIntegration},_e.prototype.getQueryStringParams=function(t){var e={},i=t.split("?");if(1<i.length)for(var r=0,o=i[1].split("&");r<o.length;r++){var n=o[r].split("=");e[ve(n[0])]=ve(n[1])}return e},_e.prototype.synchronizeCriteoUid=function(t){var e=this.cookieSynchronizerFactory();this.ctoIdOnPublisherDomain=e.getClientSideUid().value,this.isOptOut=e.getClientSideOptOut().value,this.idfs=e.getClientSideIdfs().value,this.secureId=e.getClientSideSecureId().value,this.bundle=e.getBundle().value,e.synchronizeCriteoUid(!1,t)},_e.prototype.getIdfs=function(){return[this.idfs,this.secureId].join(":")},_e.prototype.setIdfs=function(t){var e=t.split(":");e[0]&&(this.idfs=e[0]),e[1]&&(this.secureId=e[1])},_e.prototype.computeShouldIgnoreSilentMode=function(){return Math.floor(100*Math.random())<5},_e.prototype.setSilentModeIgnored=function(){this.silentModeIgnored=!0},_e.prototype.retrievePrivacyConsent=function(e){var t=this.tcfv2PrivacyProvider.readyToRetrieve(),i=this.ccpaPrivacyProvider.readyToRetrieve();t||i||e(void 0,void 0);var r,o,n=[];t&&n.push(Zt),i&&n.push(jt),t&&this.tcfv2PrivacyProvider.retrieveConsent(function(t){n.splice(n.indexOf("TCF"),1),0===n.length?e(o,t):r=t}),i&&this.ccpaPrivacyProvider.retrieveConsent(function(t){n.splice(n.indexOf("CCPA"),1),0===n.length?e(t,r):o=t})},_e);function _e(t,e,i,r,o){var n=this;this.charset=t.charset||t.characterSet||"";var a=Nt.getHighestAccessibleWindow(e);this.displayContext=this.getDisplayContext(a),this.highestAccessibleUrl=Nt.getHighestAccessibleUrl(a),this.ccpaPrivacyProvider=i||new jt(e),this.tcfv2PrivacyProvider=o||new Zt(e),this.cookieSynchronizerFactory=r||function(){return new Ce(a.topFrame,n.debugMode,n.highestAccessibleUrl)},this.retrievePrivacyConsent(function(t,e){n.ccpaPrivacyProvider.hasUserOptOut(t)||n.synchronizeCriteoUid(null===e||void 0===e?void 0:e.consentData)});var s,d=this.getQueryStringParams(this.highestAccessibleUrl);this.debugMode="1"===d.pbt_debug||!1,this.noLog="1"===d.pbt_nolog||!1,this.shouldIgnoreSilentMode=this.computeShouldIgnoreSilentMode(),this.silentModeIgnored=!1,this.debugMode&&(s=c.Debug,M.LOGLEVEL=s),this.location=e.location,this.dising=!1,this.ct0=void 0,this.wpdt0=void 0,this.isAdBlocked=void 0,this.rtaVarNames=[]}var Ee=function(){this.bids={},this.lineItemRanges=[],this.impIds=[]};var we,Se,Te,Me,Pe,Re=(Ae.prototype.push=function(){for(var t=[],e=0;e<arguments.length;e++)t[e]=arguments[e];for(var i=0,r=t;i<r.length;i++){var o=r[i];this.events.push(o)}this.evalEvents()},Ae.prototype.evalEvents=function(){for(var t=0;t<this.events.length;){var e=this.events[t];if("conditionalEvent"!==e.name||e.canEval()){var i=this.events.splice(t,1);try{i[0].eval(this)}catch(t){M.Error("An exception occurred processing an event: "+t.toString())}}else t++}},Ae.VERSION=88,Ae);function Ae(){this.standaloneBidder=new Ee,this.events=[],this.context=new be(document,window),M.Debug("Publisher Tag loaded")}function Oe(t){function e(){try{return i.apply(this,arguments)}catch(t){M.Error("Exception caught: "+t.toString())}}var i=t;for(var r in e.prototype=i.prototype,i)i.hasOwnProperty(r)&&(e[r]=i[r]);return e}window.criteo_pubtag||(le.LoadPolyfills(),window.criteo_pubtag=new Re),window.Criteo=function t(e){for(var i in e)if(i in e){var r=e[i];"function"==typeof r?e[i]=Oe(r):"object"==typeof r&&(e[i]=t(r))}return e}({PubTag:{Adapters:{Prebid:Vt},DirectBidding:{DirectBiddingEvent:se,DirectBiddingSlot:Ot,DirectBiddingUrlBuilder:bt,Size:w}},events:window.Criteo?window.Criteo.events:[],passbackEvents:window.Criteo?window.Criteo.passbackEvents:[],usePrebidEvents:!window.Criteo||window.Criteo.usePrebidEvents}),!1!==window.Criteo.usePrebidEvents&&(window.Criteo.events=(we=window.Criteo.events,Se={push:function(){for(var t=[],e=0;e<arguments.length;e++)t[e]=arguments[e];if(void 0!==t)for(var i=0,r=t;i<r.length;i++){var o=r[i];"function"==typeof o&&Oe(o)()}}},we&&Array.isArray(we)&&Se.push.apply(Se,we),Se)),Te="prebid",Me=new o,Pe=ce[Te],Me.checkLocalStorage()&&null===Me.getItem(Pe,864e5)&&new $t("https://static.criteo.net/js/ld/publishertag."+Te+".js",void 0,void 0,!1).send(function(t){Me.setItem(Pe,t,864e5)},function(t,e){M.Error("Could not update FastBid"+(e?" ("+e+")":""))})}();</script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/pageviews"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/segment"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/f(3).txt"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/f(3).txt"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/f(3).txt"></script><script async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/gtm(1).js"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/pageviews(1)"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/segment(1)"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/get"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/td-1.5.1.js"></script><script async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/tdim-1.1.0.min.js"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/gtm(2).js"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/audience"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/analytics.js"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/js"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/recaptcha__en.js"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+
+
+
+  
+
+  <meta name="robots" content="max-image-preview:large">
+
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11">
+  <title>非公式PDF版SICPの全訳を公開しました - minghaiの日記</title>
+
+  
+  <link rel="canonical" href="https://minghai.hatenadiary.org/entry/20140402/p1">
+
+
+
+  
+  
+
+<meta itemprop="name" content="非公式PDF版SICPの全訳を公開しました - minghaiの日記">
+
+  <meta itemprop="image" content="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png">
+
+
+  <meta property="og:title" content="非公式PDF版SICPの全訳を公開しました - minghaiの日記">
+<meta property="og:type" content="article">
+  <meta property="og:url" content="https://minghai.hatenadiary.org/entry/20140402/p1">
+
+  <meta property="og:image" content="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png">
+
+<meta property="og:image:alt" content="非公式PDF版SICPの全訳を公開しました - minghaiの日記">
+    <meta property="og:description" content="また1年振りの更新となりかけました。 Andres Raba氏により2011年から開発が続けられている、非公式PDF版SICPを全訳しました。 ファイル 恒例のgithubです。https://github.com/minghai/sicp-pdfjsicp.pdfが日本語版の本体です。 ejsicp.pdfはデバッグ用の日本語・英語併記となります。ライセンスはCC BY-NC-SA 3.0です。商業使用は認められないことにご注意下さい。 SICPとは何か? SICPとはMITが作成した何も知らない新入生向けのプログラミングの教科書です。プログラミングと強調したことには理由があります。この本は…">
+<meta property="og:site_name" content="minghaiの日記">
+
+  <meta property="article:published_time" content="1396364400">
+
+      <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png">  <meta name="twitter:title" content="非公式PDF版SICPの全訳を公開しました - minghaiの日記">    <meta name="twitter:description" content="また1年振りの更新となりかけました。 Andres Raba氏により2011年から開発が続けられている、非公式PDF版SICPを全訳しました。 ファイル 恒例のgithubです。https://github.com/minghai/sicp-pdfjsicp.pdfが日本語版の本体です。 ejsicp.pdfはデバッグ…">  <meta name="twitter:app:name:iphone" content="はてなブログアプリ">
+  <meta name="twitter:app:id:iphone" content="583299321">
+  <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=https%3A%2F%2Fminghai.hatenadiary.org%2Fentry%2F20140402%2Fp1">
+  
+    <meta name="description" content="また1年振りの更新となりかけました。 Andres Raba氏により2011年から開発が続けられている、非公式PDF版SICPを全訳しました。 ファイル 恒例のgithubです。https://github.com/minghai/sicp-pdfjsicp.pdfが日本語版の本体です。 ejsicp.pdfはデバッグ用の日本語・英語併記となります。ライセンスはCC BY-NC-SA 3.0です。商業使用は認められないことにご注意下さい。 SICPとは何か? SICPとはMITが作成した何も知らない新入生向けのプログラミングの教科書です。プログラミングと強調したことには理由があります。この本は…">
+
+
+  
+<script async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/gtm.js"></script><script id="embed-gtm-data-layer-loader" data-data-layer-page-specific="{&quot;hatenablog&quot;:{&quot;blogs_permalink&quot;:{&quot;blog_struct_hide_afc&quot;:&quot;false&quot;,&quot;has_related_entries_with_elasticsearch&quot;:&quot;false&quot;,&quot;blog_hide_afc_func&quot;:&quot;false&quot;,&quot;is_author_pro&quot;:&quot;false&quot;,&quot;entry_afc_issued&quot;:&quot;false&quot;,&quot;blog_hide_afc_field&quot;:&quot;false&quot;,&quot;brand_hide_afc&quot;:&quot;false&quot;,&quot;is_blog_sleeping&quot;:&quot;true&quot;,&quot;blog_afc_issued&quot;:&quot;false&quot;}}}">
+(function() {
+  function loadDataLayer(elem, attrName) {
+    if (!elem) { return {}; }
+    var json = elem.getAttribute(attrName);
+    if (!json) { return {}; }
+    return JSON.parse(json);
+  }
+
+  var globalVariables = loadDataLayer(
+    document.documentElement,
+    'data-data-layer'
+  );
+  var pageSpecificVariables = loadDataLayer(
+    document.getElementById('embed-gtm-data-layer-loader'),
+    'data-data-layer-page-specific'
+  );
+
+  var variables = [globalVariables, pageSpecificVariables];
+
+  if (!window.dataLayer) {
+    window.dataLayer = [];
+  }
+
+  for (var i = 0; i < variables.length; i++) {
+    window.dataLayer.push(variables[i]);
+  }
+})();
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P4CXTW');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+  <link rel="shortcut icon" href="https://minghai.hatenadiary.org/favicon">
+<link rel="apple-touch-icon" href="https://cdn.blog.st-hatena.com/images/touch-icon-iphone-retina.png">
+<link rel="icon" sizes="192x192" href="https://cdn.blog.st-hatena.com/images/common/meta-icon-global.png">
+
+  
+
+<link rel="alternate" type="application/atom+xml" title="Atom" href="https://minghai.hatenadiary.org/feed">
+<link rel="alternate" type="application/rss+xml" title="RSS2.0" href="https://minghai.hatenadiary.org/rss">
+<link rel="alternate" type="application/json+oembed" href="https://hatenablog.com/oembed?url=https%3A%2F%2Fminghai.hatenadiary.org%2Fentry%2F20140402%2Fp1&amp;format=json" title="oEmbed Profile of 非公式PDF版SICPの全訳を公開しました">
+<link rel="alternate" type="text/xml+oembed" href="https://hatenablog.com/oembed?url=https%3A%2F%2Fminghai.hatenadiary.org%2Fentry%2F20140402%2Fp1&amp;format=xml" title="oEmbed Profile of 非公式PDF版SICPの全訳を公開しました">
+  
+  <link rel="author" href="http://www.hatena.ne.jp/minghai/">
+
+  
+
+
+  
+    <link rel="stylesheet" type="text/css" href="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/blog.css">
+
+    
+  <link rel="stylesheet" type="text/css" href="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/482c945748398a5ce97ea0d8013fec51d83f6e77">
+  
+
+  
+
+  
+<script> </script>
+
+  
+<style>
+  div#google_afc_user,
+  div.google-afc-user-container,
+  div.google_afc_image,
+  div.google_afc_blocklink {
+      display: block !important;
+  }
+</style>
+
+
+  
+    <script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/valve.js" async=""></script>
+<script id="test-valve-definition">
+  var valve = window.valve || [];
+
+  valve.push(function(v) {
+    v.config({
+      service: 'blog',
+      content: {
+        result: 'adtrust',
+        documentIds: ["blog:entry:17680117127089447589"]
+      }
+    });
+    v.defineDFPSlot({"sizes":[[300,250],[336,280]],"slotId":"google_afc_user_container_0","unit":"/4374287/blo_pc_com_6_3328_0_no"});    v.defineDFPSlot({"lazy":"","sizes":[[300,250],[336,280],[468,60],"fluid"],"slotId":"google_afc_user_container_1","unit":"/4374287/blog_user"});
+    v.sealDFPSlots();
+  });
+</script>
+
+  
+
+  
+<script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/itm.js"></script><script charset="utf-8" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/button.93a0c25c2d2f3081c705c98c2d9dec0e.js"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/apstag.js"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/hatena_bigmining.js"></script><script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/entries.json" type="text/javascript"></script><script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/f(4).txt"></script><script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/f(5).txt"></script><script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/f(6).txt"></script><script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/entries(1).json" type="text/javascript"></script><script type="text/javascript" async="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/gpt.js"></script><link rel="preload" href="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/f(7).txt" as="script"><script type="text/javascript" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/f(7).txt"></script><link rel="preload" href="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/f(8).txt" as="script"><script type="text/javascript" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/f(8).txt"></script><script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/pubads_impl_2020041602.js" async=""></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html"></head>
+
+  <body class="page-entry" data-dictozo-extension-installed="true" data-gr-c-s-loaded="true">
+    
+
+    <div id="globalheader-container" data-brand="hatenablog">
+  <iframe id="globalheader" height="37" frameborder="0" allowtransparency="true" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/saved_resource.html"></iframe>
+</div>
+
+
+    <div id="container">
+      <div id="container-inner">
+        <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner">
+    <div id="blog-title-content">
+      <h1 id="title"><a href="https://minghai.hatenadiary.org/">minghaiの日記</a></h1>
+      
+    </div>
+  </div>
+</header>
+
+        
+
+        
+        
+
+
+
+
+<div id="content" class="hfeed">
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+  <article class="entry no-entry sleeping-ads" style="display: block !important;">
+    <div class="entry-inner">
+      <div class="entry-content">
+        
+        
+        <div id="google_afc_user_container_0" class="sleeping-ad" style="" data-google-query-id="CPLSs4mz7ugCFdIDXAod7KQERA"><div id="google_ads_iframe_/4374287/blo_pc_com_6_3328_0_no_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe frameborder="0" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/container.html" id="google_ads_iframe_/4374287/blo_pc_com_6_3328_0_no_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="250" data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div>
+        
+
+        
+        <p class="sleeping-ads-notice" style="display: none;">この広告は、90日以上更新していないブログに表示しています。</p>
+      </div>
+    </div>
+  </article>
+
+
+
+          
+  
+  <!-- google_ad_section_start -->
+  <!-- rakuten_ad_target_begin -->
+  
+  
+  
+
+  
+
+  
+    
+      
+        <article class="entry hentry test-hentry js-entry-article date-first autopagerize_page_element chars-8400 words-200 mode-hatena entry-odd" id="entry-17680117127089447589" data-keyword-campaign="" data-uuid="17680117127089447589" data-publication-type="entry">
+  <div class="entry-inner">
+    <header class="entry-header">
+  
+    <div class="date entry-date first">
+    <a href="https://minghai.hatenadiary.org/archive/2014/04/02" rel="nofollow">
+      <time pubdate="" datetime="2014-04-01T15:00:00Z" title="2014-04-01T15:00:00Z">
+        <span class="date-year">2014</span><span class="hyphen">-</span><span class="date-month">04</span><span class="hyphen">-</span><span class="date-day">02</span>
+      </time>
+    </a>
+  </div>
+  <h1 class="entry-title">
+  <a href="https://minghai.hatenadiary.org/entry/20140402/p1" class="entry-title-link bookmark">非公式PDF版SICPの全訳を公開しました</a>
+</h1>
+
+  
+  
+
+
+  
+
+  
+
+</header>
+
+    
+
+
+    <div class="entry-content">
+  
+    <p>また1年振りの更新となりかけました。<br>
+Andres Raba氏により2011年から開発が続けられている、非公式PDF版<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>を全訳しました。</p>
+
+<div class="section">
+    <h4>ファイル</h4>
+    <p>恒例の<a class="keyword" href="http://d.hatena.ne.jp/keyword/github">github</a>です。</p><p><a href="https://github.com/minghai/sicp-pdf">https://github.com/minghai/sicp-pdf</a></p><p>jsicp.pdfが日本語版の本体です。<br>
+ejsicp.pdfは<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C7%A5%D0%A5%C3%A5%B0">デバッグ</a>用の日本語・英語併記となります。</p><p>ライセンスはCC BY-NC-SA 3.0です。商業使用は認められないことにご注意下さい。<br>
+<a href="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/88x31.png" class="http-image" target="_blank"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/88x31.png" class="http-image" alt="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png"></a><br>
+</p>
+
+</div>
+<div class="section">
+    <h4><a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>とは何か?</h4>
+    <p><a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>とはMITが作成した何も知らない新入生向けの<span class="deco" style="font-weight:bold;">プログラミング</span>の教科書です。</p><p>プログラミングと強調したことには理由があります。この本は良くある<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%B8%C0%B8%EC">プログラミング言語</a>の教科書ではなく、あくまでもプログラミングを勉強するための教科書だからです。このことはこの本の中でも、最初の前書き、序文にて何度でも繰り返し強調されています。筆者達がこの本をそれまでの教科書から著しく際立たせる特徴として誇る理由です。</p><p>米国の新聞、ボストングローブ紙のMITの創立150周年記念企画にて作成されたMITでの最も重要な発明リストにもこの<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>は選ばれています。</p><p><a href="http://www.boston.com/news/education/higher/specials/mit150/mitlist/?page=20">127番 もっとも重要な本</a><br>
+</p>
+
+    <blockquote>
+        <p>Harold Abelson and Gerald Jay Sussman, a pair of MIT computer science professors, wrote “Structure and Interpretation of Computer Programs,” which remains a classic for encouraging the teaching of not one specific programming language, but big-picture themes students could apply across a range of programming scenarios.</p>
+
+    </blockquote>
+
+<pre>MITの計算機科学の二人の教授、Harold AbelsonとGerald Jay Sussmanは"<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>"を出版しました。
+これは1つの特定の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%B8%C0%B8%EC">プログラミング言語</a>を教えるのではなく、学生が一連のプログラミングの
+シナリオに渡って適用できる大局的なテーマを教えることを促す古典としてあり続けています。
+</pre><p>より深い「なぜ<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>が重要であるか」については以下のカリフォルニア大学バークリー校の<br>
+Brian Harvey氏による以下の記事に説明されています。</p><p><a href="http://www.cs.berkeley.edu/~bh/sicp.html">Why Structure and Interpretation of Computer Programs matters</a></p><p>この中で氏は<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>が革命的である3つの理由を挙げています。</p>
+
+<ol>
+<li>計算機科学入門の教科書のハードルを上げた</li>
+<li><a class="keyword" href="http://d.hatena.ne.jp/keyword/Scheme">Scheme</a>を選択した</li>
+<li>新入生が達成できることの期待レベルについて毅然として楽観した</li>
+</ol><p>1番が最も重要なことであり、かつ上でも述べられたことです。</p><p>2番はこの教科書の前書きや序文でも再三繰り返されている点です。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Scheme">Scheme</a>とは<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>と呼ばれる<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%B8%C0%B8%EC">プログラミング言語</a>のある方言です。大学の授業では実社会で人気のある<a class="keyword" href="http://d.hatena.ne.jp/keyword/C%B8%C0%B8%EC">C言語</a>や<a class="keyword" href="http://d.hatena.ne.jp/keyword/Java">Java</a>等を教えることが多いと言われています。しかし、<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>を選択しました。その理由は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>があまりにも簡単で、ほとんど教える必要の無い言語であるためです。この説明には実は嘘があり、本当に<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>の標準仕様を全て理解することは実はとても大変です。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>の標準規格である<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>の<a href="http://www.amazon.co.jp/dp/4320025881/">教科書</a>は電話帳並の太さを誇ります。実はここに仕掛けがあるのですが<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>がプログラミングの教科書であり、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%B8%C0%B8%EC">プログラミング言語</a>の教科書ではないという事実をもう一度思い出して下さい。<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>の教科書ではないのです。従って<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>では<a class="keyword" href="http://d.hatena.ne.jp/keyword/Scheme">Scheme</a>の極一部の機能しか教えません。しかし、それで十分なのです。これこそが<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>の特徴であるのですが、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>は世の中に存在する言語の中で最も文法が簡単な言語の1つです。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>はそもそもLIst <a class="keyword" href="http://d.hatena.ne.jp/keyword/Processor">Processor</a>の略であり、リスト処理機という意味です。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>では全てのプログラムがリストと呼ばれる構造で記述され、プログラムとデータが区別されません。通常の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%B8%C0%B8%EC">プログラミング言語</a>では言語の構文と文法、それにデータ構造を長々と覚えていかなければなりません。しかし、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>ではとりあえずの文法を覚えれば後はその流れで使うことができます。そしてこの<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>の単純さは<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>自身を<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>で扱うことの簡単さへと繋り、そのことが<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>というプログラミングの教科書に信じられない程の奥深さを与える布石となるのです。</p><p>3番は<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>という教科書の恐しさをとても良く表しています。<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>という教科書は信じられない程の幅広い内容を一気に扱います。例えば簡単に流れを追って見ると1章ではプログラミングの基礎とモデル、抽象化の意味を学び、2章までに渡ってプログラミングで利用される代表的なデータ構造と<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%EB%A5%B4%A5%EA%A5%BA%A5%E0">アルゴリズム</a>を学びます。3章では<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AA%A5%D6%A5%B8%A5%A7%A5%AF%A5%C8%BB%D8%B8%FE">オブジェクト指向</a>の元となる概念、状態とその変更について学び、並行プログラミングにて生じる問題について習い、従来の一方向なプログラミングとは異なる制約伝播システムについて習い、さらに時間により生じる問題を解決するために遅延評価とストリームの実装を習います。4章ではこれらの問題をより深く探求するために言語の評価機と<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF">インタプリタ</a>を開発し、独自の<a class="keyword" href="http://d.hatena.ne.jp/keyword/Scheme">Scheme</a>実装として遅延評価を行う<a class="keyword" href="http://d.hatena.ne.jp/keyword/Scheme">Scheme</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF">インタプリタ</a>の実装を始めとして、非決定性プログラム言語の開発、論理プログラム言語の開発へと進みます。そして5章ではプログラムの最もプリミティブな解釈の理解を目的として、計算機を自ら設計し、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B5%A1%B3%A3%B8%EC">機械語</a>を設計し、それを実行する評価機を実装し、そのための<a class="keyword" href="http://d.hatena.ne.jp/keyword/Scheme">Scheme</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D1%A5%A4%A5%E9">コンパイラ</a>を実装します。さらには<a class="keyword" href="http://d.hatena.ne.jp/keyword/Scheme">Scheme</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF">インタプリタ</a>と<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D1%A5%A4%A5%EB">コンパイル</a>済みコードとの連携までを実装します。これだけのことを学部1年生の前期で行うと言ったら、普通の情報処理学科の学生であれば気絶するのではないでしょうか? :-) 実際には、MITですら5章全部を教えるのは不可能だと考え4章と5章の一部は外していると前書きにて説明しています。しかし、それでも<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>の教える内容は通常のものではありません。しかし、<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>はこれだけのことを教えるために、綿密に設計されています。1章から5章への流れは丁寧に積み上げられており、特に課題は同じ問題が違う形で、何度も丁寧に繰り返されます。学生はこの流れの中で、何が問題の本質であり、どのように解決されていくのかについて、計算機科学の歴史を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C4%C9%C2%CE%B8%B3">追体験</a>して行くことになります。</p><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>の面白い点として他には、<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>が数多くのプログラミング<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D1%A5%E9%A5%C0%A5%A4%A5%E0">パラダイム</a>を一度に学べることが挙げられます。</p><p>この教科書は最初に置換モデルを学習し、その中の制約においてプログラムを行います。通常の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%B8%C0%B8%EC">プログラミング言語</a>にて最も最初に習う、破壊的代入が最初に出てくるのはなんと3章です。そこで初めて、ここまで学生達が学んできたプログラミング<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D1%A5%E9%A5%C0%A5%A4%A5%E0">パラダイム</a>が<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B4%D8%BF%F4%B7%BF%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">関数型プログラミング</a>であることを学ぶのです。3章では<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AA%A5%D6%A5%B8%A5%A7%A5%AF%A5%C8%BB%D8%B8%FE">オブジェクト指向</a>プログラム言語に対する批判等も脚注に書かれ、盛り上がってきます。遅延評価においては課題を通して、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%B8%C0%B8%EC">プログラミング言語</a>の設計において遅延評価の利用は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DE">プログラマ</a>に決定権を与えるべきであろうかという問題が読者に提起されます。3章の制約システムや4章の論理プログラミングを知っている人は日本のIT業界では割と少ないほうなのではないでしょうか。きっと楽しめると思います。</p><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>は初心者向けの教科書です。しかし、中身はとても本格的な教科書になります。その範囲はとても広く、まさにこの本は計算機科学の入口の塊です。読者は常に脚注から計算機科学の歴史を学び、さらなる学習のための参考資料を知ることができます。PDF版の利点として参考文献には数多くのリンクが貼られていて直ぐに論文を読むことができます。恐らくですが、実際に情報処理学科を出た人達が読んでも学ぶことが多い入門書です。実際に私は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BE%F0%CA%F3%B9%A9%B3%D8">情報工学</a>科の出身ですが、それでもこの本からとても多くのことを学ぶことができました。</p>
+
+</div>
+<div class="section">
+    <h4><a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>の難点</h4>
+    <p><a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>は新入生向けの教科書です。内容はとても簡単な所からスタートします。ところが難点として<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>の内容は高校生までの数学と物理の電子回路の内容を"良く"理解していることを前提としています。<br>
+ぶっちゃけてしまえば、課題として出てくる数学や電子回路の話が結構難しいのです。<br>
+例えば<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C8%F9%CA%AC">微分</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C0%D1%CA%AC">積分</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%C7%BF%F4">素数</a>、剰余、確率、極限、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B5%E9%BF%F4">級数</a>、行列の理解が必要となります。<br>
+ネットで検索すると結構<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>を始めて2章までに脱落してしまう人がいるように思います。</p><p>しかし、どうか諦めないで下さい。色々なレビューに書かれていますが、本当のお楽しみは3章以降だと思います。数学的な内容は意地でも頑張って理解して下さい。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BF%F4%B3%D8%A5%AC%A1%BC%A5%EB">数学ガール</a>等を先に読んでおくと内容の理解が進むかと思います。私は(株)<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%EF%A1%BC%A5%AF%A5%B9%A5%A2%A5%D7%A5%EA%A5%B1%A1%BC%A5%B7%A5%E7%A5%F3%A5%BA">ワークスアプリケーションズ</a>様が主催して下さった「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DE">プログラマ</a>のための数学」勉強会の内容が<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>にて展開される数値解析の内容とほぼ重なりとても参考になりました。</p><p><a href="http://nineties.github.io/math-seminar/">http://nineties.github.io/math-seminar/</a><br>
+<a href="http://www.youtube.com/playlist?list=PLzJWjr7AvxH0YYpi2uAH_QHLaSJQ5fZrR">http://www.youtube.com/playlist?list=PLzJWjr7AvxH0YYpi2uAH_QHLaSJQ5fZrR</a></p><br>
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>の難点として、課題が非常に多い点も挙げられます。これらの課題は内容の理解にとても重要なため、全て行うことがお勧めなのですが、量が半端ではありません。そのため全てを行うことを自分に課してしまうとあまりに負荷が高くてやってられなくなります。どうせ後半にはオープンな課題として、これが答えられたら博士課程の価値がある等といった課題も出てきます。ですので、気楽にほどほどに行ってください。</p><p>ちなみに、検索すると世界中で<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>を勉強している人達の回答が見られますが、5章辺りになると皆、課題をやっていません :-)</p><p>最後に、<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>の重要なテーマに抽象化が存在するのですが、抽象化レベルの高い話は簡単に道に迷います。特に4章、5章ではプログラムが大きくなり、自分が何をやっているのか全くわからなくなります。しかも、最後の最後に至るまでプログラムが完成し、実行することがありません。これを克服するためにはさっさと<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>のサイトから完成したプログラムをダウンロードして、先に終わりを読んで実行してしまうことです。そしてプログラム全体を読みながら教科書を読むことで初めて全貌が掴めてくることでしょう。</p>
+
+</div>
+<div class="section">
+    <h4><a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>を読む前に</h4>
+    <p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Scheme">Scheme</a>の処理系を手に入れましょう。</p><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Mac">Mac</a>と<a class="keyword" href="http://d.hatena.ne.jp/keyword/Windows">Windows</a>の方にはRacketがお勧めです。</p><p><a href="http://racket-lang.org/">http://racket-lang.org/</a></p><p>Racketは<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>処理系の一方言ですが、グラフィカルな<a class="keyword" href="http://d.hatena.ne.jp/keyword/IDE">IDE</a>を持ち、複数の言語を使用することが可能で、その中には<a class="keyword" href="http://d.hatena.ne.jp/keyword/Scheme">Scheme</a>や<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>専用の言語拡張が含まれます。特に<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a> 2.2.4節で習うピクチャー言語は専用の処理系を必要とするので通常は実行することができませんが、Dr. Racketの<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>拡張を用いることで実際に実行することが可能になります。</p><p><a href="http://www.neilvandyke.org/racket-sicp/">http://www.neilvandyke.org/racket-sicp/</a></p><p>Racketと<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>拡張のインストール方法に関しては以下のサイトが<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%A5%B7%A5%E7%A5%C3%A5%C8">スクリーンショット</a>も豊富にまとめて下さっています。</p><p><a href="http://www.applelife100.com/2013/04/02/programmin-environment-for-sicp/">http://www.applelife100.com/2013/04/02/programmin-environment-for-sicp/</a></p><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Linux">Linux</a>を使用されている硬派な方にはMIT <a class="keyword" href="http://d.hatena.ne.jp/keyword/Scheme">Scheme</a>がお勧めです。教科書ではMITの実装と他の実装の違いが良く話題になりますので複数入れて比較してみるのも面白いでしょう。</p><p><a href="http://www.gnu.org/software/mit-scheme/">http://www.gnu.org/software/mit-scheme/</a></p><br>
+<p>どの選択を行っても、最初にデバッガの使用法について学んでおくことをお勧めします。<br>
+プログラミング入門者が最も最初に嵌るのが入力ミスであり、次に<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C7%A5%D0%A5%C3%A5%B0">デバッグ</a>です。デバッガの使用法を知る人と知らない人とでは生産性に10倍以上の差がつきます。</p>
+
+</div>
+<div class="section">
+    <h4>非公<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BC%B0%C6%FC">式日</a>本語版PDFについて</h4>
+    <p>非公<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BC%B0%C6%FC">式日</a>本語版PDFはAndres Raba氏による非公式PDF版の翻訳です。<br>
+<a href="https://github.com/sarabander/sicp-pdf">https://github.com/sarabander/sicp-pdf</a></p><p>非公式PDF版には元となったLytha Ayth氏によるTexinfo版が存在します。<br>
+<a href="http://www.neilvandyke.org/sicp-texi/">http://www.neilvandyke.org/sicp-texi/</a></p><p>非公式Texinfo版はMITによる<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>のオンライン上での全文公開を用いて作成されました。<br>
+<a href="http://mitpress.mit.edu/sicp/">http://mitpress.mit.edu/sicp/</a></p><p>元々、非公式PDF版は非公式Texinfo版に対して<a class="keyword" href="http://d.hatena.ne.jp/keyword/TeX">TeX</a>の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%C8%C8%C7">組版</a>を挿入し、texi2pdfを行うことでPDF化するという戦略が取られていました。<br>
+しかし、残念なことにtexi2pdfが内部的に利用するpdfTeXは海外では主流なのですが、日本では独自に<a class="keyword" href="http://d.hatena.ne.jp/keyword/pTeX">pTeX</a>の開発が進んだために傍流でした。当然のごとく、texi2pdfでは日本語を表示することができませんでした。</p><p>その窮地を救って下さったのが以下のサイトでした。<br>
+<a href="http://moimoitei.blogspot.jp/2010/06/generate-pdf-with-bookmark-on.html">http://moimoitei.blogspot.jp/2010/06/generate-pdf-with-bookmark-on.html</a></p><p>この記事が提供して下さったtexinfo.<a class="keyword" href="http://d.hatena.ne.jp/keyword/tex">tex</a>を用いることで、無事にtexi2pdfの代わりにtexi2dviとdvipdfmxを併用することで日本語を出力することが可能になりました。しかし、<a class="keyword" href="http://d.hatena.ne.jp/keyword/LaTeX">LaTeX</a>ではなく、直接<a class="keyword" href="http://d.hatena.ne.jp/keyword/TeX">TeX</a>を使うことが大きな障害でした。またこの記事も2010年のため、ASCIIやNTTの<a class="keyword" href="http://d.hatena.ne.jp/keyword/pTeX">pTeX</a>の違い等がコードには含まれており、現状には合っていない感じを受けておりました。私自身は<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>の勉強はしたかったのですが、<a class="keyword" href="http://d.hatena.ne.jp/keyword/TeX">TeX</a>に時間を必要以上に取られることはストレスに感じておりました。この時点では翻訳のみを完成させた後に、MathjaxでWebに逃げる予定でいました。</p><p>その後、大きな転機となったのが、Andres Raba氏によるXeLaTeXの採用です。Raba氏は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a>による力技でTexinfoを<a class="keyword" href="http://d.hatena.ne.jp/keyword/LaTeX">LaTeX</a>に変換し、改めて<a class="keyword" href="http://d.hatena.ne.jp/keyword/LaTeX">LaTeX</a>での<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%C8%C8%C7">組版</a>へと舵を切ったのでした。XeLaTeXはこれもまだ日本では傍流であり、滅多には使用されていません。しかし、幸いなことに以下のサイトにてXeLaTeXにて日本語を使用するためのパッケージを開発して下さった人がいらしたのです。</p><p><a href="http://zrbabbler.sp.land.to/zxjatype.html">http://zrbabbler.sp.land.to/zxjatype.html</a></p><p>この2つの奇跡により、俄然とやる気がでてきました。実際には翻訳が完成してから、Raba氏提供による<a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A5%D7%A5%C8">スクリプト</a>にて<a class="keyword" href="http://d.hatena.ne.jp/keyword/LaTeX">LaTeX</a>形式に変換し、日本語をきちんと表示するまでには語るも涙な苦労がとんでもなくあったのですが、割愛します。ただこの課程でtexinfoファイルと<a class="keyword" href="http://d.hatena.ne.jp/keyword/tex">tex</a>ファイルの両方を同期させる苦労に耐えきれなくなったために現在、<a class="keyword" href="http://d.hatena.ne.jp/keyword/LaTeX">LaTeX</a>ファイルを直接変更しており、既にTexinfoファイルの内容は古いままになっております。現在においてinfoファイルを<a class="keyword" href="http://d.hatena.ne.jp/keyword/Emacs">Emacs</a>で閲覧したいという方は少ないと思いますが、もしご希望の方がいらしましたら御自身で反映してpatchを送ってくださるととても助かります。よろしくお願いいたします。</p><p>最終的には日本では最も<a class="keyword" href="http://d.hatena.ne.jp/keyword/TeX">TeX</a>環境が進んでいるのは意外にも<a class="keyword" href="http://d.hatena.ne.jp/keyword/Windows">Windows</a>環境であったために、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Linux">Linux</a>から<a class="keyword" href="http://d.hatena.ne.jp/keyword/Windows">Windows</a>環境へと移行しています。xelatexの実行はTeXWorksから行うことができたためとても捗りました。</p><p>非公<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BC%B0%C6%FC">式日</a>本語PDF版ビルド環境を構築するためには<a class="keyword" href="http://d.hatena.ne.jp/keyword/Windows">Windows</a>に<a class="keyword" href="http://d.hatena.ne.jp/keyword/W32TeX">W32TeX</a>をインストールして下さい。あべのり様の作成して下さった<a class="keyword" href="http://d.hatena.ne.jp/keyword/TeX">TeX</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%E9">インストーラ</a>を使えば簡単に可能です。</p><p><a href="http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html">http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html</a></p><p>次に<a class="keyword" href="http://d.hatena.ne.jp/keyword/IPA%A5%D5%A5%A9%A5%F3%A5%C8">IPAフォント</a>をインストールして下さい。<br>
+<a href="http://ipafont.ipa.go.jp/">http://ipafont.ipa.go.jp/</a></p><p>フォントをダウンロードした後にフォントファイルを開くとインストールボタンが表示されますので、それを押せばインストールが完了します。明朝とゴシックの両方を必ずインストールして下さい。</p><p>後はTeXWorksで<a class="keyword" href="http://d.hatena.ne.jp/keyword/tex">tex</a>ファイルを開いて黄緑色の再生ボタンを押せば勝手に<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D1%A5%A4%A5%EB">コンパイル</a>してPDFを表示してくれます。</p><p>なお、この時にstyファイルが無いというエラーが最初は大量に出ると思いますが、どんなスタ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%EB%A5%D5%A5%A1">イルファ</a>イルが無いのかメモしてませんでした。すみませんが、検索して適当にインストールして下さい。<br>
+<br>
+</p>
+
+</div>
+<div class="section">
+    <h4>翻訳について</h4>
+    <p>最初に、ど素人の翻訳なのであまり期待はしないで下さい。修正は大歓迎ですのでpullリク<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%B9">エス</a>トを下さい。</p><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>の英語の大きな特徴は長文です。1つの文が5行や7行当たり前です。このことは教養の高い英語では当たり前のようです。しかし、これは翻訳においては問題になります。日本語と英語の語順の違いから、長い英語を逐語訳すると読めたものじゃなくなります。特に英語では頭から流れでどんどんと代名詞に置き換えられていくため、日本語にする場合に英語は終わりから訳すのだとかいうローカルルールを適用すると見事に破綻する場合があります。このため、原文では1文で書かれている長文をぶった切って短い文の集合にする場合が多くなりました。ただし、その分、原文の順をできるだけ守り、著者の意図を重視した流れに訳したつもりです。</p><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>は新入生向けの教科書であり、入門書です。ですから、とにかく優しく訳したいと願いました。本文は全て「です、ます」に訳してあります。これは通常の教科書では珍しいかと思いましたが、少しでも読者の精神的な負担を減らしたいと考えました。</p><p>専門用語については可能な限り、検索しまくって正しいと思われる用語を適用しました。しかし、私に学が無い分、おかしな訳も混じっているかもしれません。ご指摘をお待ちしております。</p><p>最後に、法的問題を回避するために、私は和田先生が公開して下さった「公式な」翻訳を読んでおりません。そのため訳に違いがあるかと思います。その場合には、当たり前ですが、和田先生のほうを信用して下さい。日本を代表する先生と私のようなど素人では最初から勝負になりません。:-)</p><p>そもそも、2013年8月にピアソン桐原が撤退し、<a class="keyword" href="http://d.hatena.ne.jp/keyword/SICP">SICP</a>が無くなると聞いたときにこれを訳せば喜ばれるのではないかと始めました。まさか後から和田先生が公式訳を公開するとは全く想像していませんでした。一時は本当に公開を止めようかと悩んでいたのですが明示的にオープンなライセンスで公開することには意義があるのではないかと考えました。ただ、何かあったらあっという間に消える程度の存在なのは確かです。</p><p>翻訳にも<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C3%F8%BA%EE%B8%A2">著作権</a>が存在します。そのため、和田先生の公式訳を引っ張ってきて、こちらの非公式訳に入れるような修正は行わないで下さい。何卒、よろしくお願いいたします。</p>
+
+</div>
+<div class="section">
+    <h4>お助け下さい。その1</h4>
+    <p>現状のPDFは読めば読む程、細かなミスに気付く状態です。ぜひ、誤りをご報告下さい。</p><p>また現状のPDFは日本語の禁則処理等が破綻しており、まだまだ問題が存在します。TeXnicianな方々の助けをぜひ頂きたいです。</p><p>よろしくお願いいたします。</p>
+
+</div>
+    
+
+  
+</div>
+
+    
+  <footer class="entry-footer">
+    
+    <p class="entry-footer-section">
+  <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="minghai">minghai</span></span>
+  <span class="entry-footer-time"><a href="https://minghai.hatenadiary.org/entry/20140402/p1"><time data-relative="" datetime="2014-04-01T15:00:00Z" title="2014-04-01T15:00:00Z" pubdate="" class="updated">6年前</time></a></span>
+</p>
+
+    
+  <div class="hatena-star-container">
+  <span class="hatena-star-comment-container"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/comment.gif" tabindex="0" alt="Comments" title="Comments" class="hatena-star-comment-button" style="cursor: pointer; margin: 0px; padding: 0px; border: none; vertical-align: middle; display: none;"></span><span class="hatena-star-star-container"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/hatena-star-add-button.svg" tabindex="0" alt="Add Star" title="Add Star" class="hatena-star-add-button" style="cursor: pointer; margin: 0px 3px; padding: 0px; border: none; vertical-align: middle;"><a href="https://blog.hatena.ne.jp/keyesberry/"><span class="hatena-big-star-star-container"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/profile(1).png" tabindex="0" class="hatena-star-user" style="padding: 0px; border: none;"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/star-green.gif" tabindex="0" class="hatena-star-star" style="padding: 0px; border: none;" alt="keyesberry (green)" title=""></span></a><a href="https://blog.hatena.ne.jp/hogege/"><span class="hatena-big-star-star-container"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/profile(2).png" tabindex="0" class="hatena-star-user" style="padding: 0px; border: none;"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/star-green.gif" tabindex="0" class="hatena-star-star" style="padding: 0px; border: none;" alt="hogege (green)" title=""></span></a><a href="https://blog.hatena.ne.jp/serian/"><span class="hatena-big-star-star-container"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/profile(3).png" tabindex="0" class="hatena-star-user" style="padding: 0px; border: none;"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/star-green.gif" tabindex="0" class="hatena-star-star" style="padding: 0px; border: none;" alt="serian (green)" title=""></span></a><a href="https://blog.hatena.ne.jp/g000001/"><span class="hatena-big-star-star-container"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/profile(4).png" tabindex="0" class="hatena-star-user" style="padding: 0px; border: none;"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/star.gif" tabindex="0" class="hatena-star-star" style="padding: 0px; border: none;" alt="g000001" title=""></span></a><span class="hatena-star-inner-count" tabindex="0" style="font-weight: bold; font-size: 80%; font-family: arial, sans-serif; margin: 0px 2px; color: rgb(244, 177, 40); cursor: pointer;">53</span><a href="https://blog.hatena.ne.jp/ais4/"><span class="hatena-big-star-star-container"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/profile(5).png" tabindex="0" class="hatena-star-user" style="padding: 0px; border: none;"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/star.gif" tabindex="0" class="hatena-star-star" style="padding: 0px; border: none;" alt="ais4" title=""></span></a></span></div>
+  <div class="hatena-star-metadata" style="display: none">
+    <a class="hatena-star-permalink" href="https://minghai.hatenadiary.org/entry/20140402/p1">非公式PDF版SICPの全訳を公開しました</a>
+  </div>
+
+
+    
+<div class="social-buttons">
+  
+  
+    <div class="social-button-item">
+      <iframe class="hatena-bookmark-button-frame" title="この記事をはてなブックマークに追加" frameborder="0" scrolling="no" width="84" height="40" src="javascript:false" style="width: 84px; height: 40px;" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/saved_resource(1).html"></iframe>
+    </div>
+  
+  
+  
+    <div class="social-button-item">
+      <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 74px; height: 20px;" title="Twitter Tweet Button" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/tweet_button.6787510241df65d128e2b60207ad4c25.ja.html" data-url="https://minghai.hatenadiary.org/entry/20140402/p1"></iframe>
+    </div>
+  
+  
+  
+  
+</div>
+
+    
+  
+  
+    
+    <div class="google-afc-image test-google-rectangle-ads">      
+      
+      <div id="google_afc_user_container_1" class="google-afc-user-container google_afc_blocklink2_5 google_afc_boder" data-test-unit="/4374287/blog_user" data-google-query-id="CPPSs4mz7ugCFdIDXAod7KQERA"><div id="google_ads_iframe_/4374287/blog_user_0__container__" style="border: 0pt none; display: inline-block; width: 468px; height: 60px; padding-top: 0px;"><iframe frameborder="0" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/container(1).html" id="google_ads_iframe_/4374287/blog_user_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="468" height="60" data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-google-container-id="2" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div>
+      
+        <a href="http://blog.hatena.ne.jp/guide/pro" class="open-pro-modal" data-guide-pro-modal-ad-url="https://hatenablog.com/guide/pro/modal/ad">広告を非表示にする</a>
+      
+    </div>
+  
+  
+
+
+    <div class="customized-footer">
+      
+
+        
+
+        
+
+        
+        
+
+      
+    </div>
+    
+  <div class="comment-box">
+    
+    <ul class="comment"><li id="comment-17680117127089447786" class="entry-comment js-entry-comment
+    comment-guest
+  " data-comment-uuid="17680117127089447786" data-blog-uuid="17680117127089447079" onclick="">
+  <p class="comment-user-name"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/guest_icon_64.gif" class="hatena-id-icon" alt="" title="">
+    通りすがり
+  </p>
+  <div class="comment-content"><p>突然のコメント失礼いたします。<br>通りすがりの者です。翻訳作業お疲れ様でした。<br>SICPというものについては存知上げませんでしたが、<br>和訳ＰＤＦの分量と、その後の解説文の丁寧さに圧倒されました。<br>minghaiさんのように、高い能力を持ち、<br>学習成果を公けにすることにまで<br>強い情熱を燃やす方がいるのを見ると<br>日本もまだまだ捨てたもんじゃないなと思います。<br><br>何の力にもなれず申し訳ありませんが、<br>minghaiさんならきっと良い職が見つかると思います。<br>心身の健康にお気をつけて、ご自身の目標に邁進されますよう。</p>
+</div>
+
+  <p class="comment-metadata">
+    
+    <a href="https://minghai.hatenadiary.org/entry/20140402/p1#comment-17680117127089447786" class="permalink" style="display:none"></a>
+
+    <time datetime="2014-04-05T17:28:30Z" data-relative="" data-epoch="1396718910000">6年前</time>
+  <span class="hatena-star-comment-container"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/comment.gif" tabindex="0" alt="Comments" title="Comments" class="hatena-star-comment-button" style="cursor: pointer; margin: 0px; padding: 0px; border: none; vertical-align: middle; display: none;"></span><span class="hatena-star-star-container"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/hatena-star-add-button.svg" tabindex="0" alt="Add Star" title="Add Star" class="hatena-star-add-button" style="cursor: pointer; margin: 0px 3px; padding: 0px; border: none; vertical-align: middle;"></span></p>
+
+  <a href="https://minghai.hatenadiary.org/entry/20140402/p1#" class="comment-delete-button js-comment-delete-button">
+  </a>
+</li>
+<li id="comment-17680117127089447788" class="entry-comment js-entry-comment
+    comment-hatena-user
+  " data-comment-uuid="17680117127089447788" data-blog-uuid="17680117127089447079" onclick="">
+  <p class="comment-user-name"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/profile(6).png" class="hatena-id-icon" alt="" title=""> <a href="http://blog.hatena.ne.jp/minghai/" class="comment-user-id"><span class="comment-nickname" data-load-nickname="1" data-user-name="minghai">id:minghai</span></a></p>
+  <div class="comment-content"><p>通りすがりさん、ありがとうございます!</p>
+</div>
+
+  <p class="comment-metadata">
+    
+    <a href="https://minghai.hatenadiary.org/entry/20140402/p1#comment-17680117127089447788" class="permalink" style="display:none"></a>
+
+    <time datetime="2014-04-05T19:20:51Z" data-relative="" data-epoch="1396725651000">6年前</time>
+  <span class="hatena-star-comment-container"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/comment.gif" tabindex="0" alt="Comments" title="Comments" class="hatena-star-comment-button" style="cursor: pointer; margin: 0px; padding: 0px; border: none; vertical-align: middle; display: none;"></span><span class="hatena-star-star-container"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/hatena-star-add-button.svg" tabindex="0" alt="Add Star" title="Add Star" class="hatena-star-add-button" style="cursor: pointer; margin: 0px 3px; padding: 0px; border: none; vertical-align: middle;"></span></p>
+
+  <a href="https://minghai.hatenadiary.org/entry/20140402/p1#" class="comment-delete-button js-comment-delete-button">
+  </a>
+</li>
+<li id="comment-17680117127089447789" class="entry-comment js-entry-comment
+    comment-guest
+  " data-comment-uuid="17680117127089447789" data-blog-uuid="17680117127089447079" onclick="">
+  <p class="comment-user-name"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/guest_icon_64.gif" class="hatena-id-icon" alt="" title="">
+    dara
+  </p>
+  <div class="comment-content"><p>翻訳の前書きを読んだだけですが、意味不明でした。そこで原文を読んでみたら読みやすいのでびっくりしました。訳が酷すぎるとamazonとかで言われ続けた和田の翻訳がネットに上がっているのでそれと比べてみましたが、和田訳と比べても酷いと思います。基本的な勘違いというか、読めていないと思います。UTF 版というのは気に入りましたので、翻訳もどうにかして欲しい所です。</p>
+</div>
+
+  <p class="comment-metadata">
+    
+    <a href="https://minghai.hatenadiary.org/entry/20140402/p1#comment-17680117127089447789" class="permalink" style="display:none"></a>
+
+    <time datetime="2014-08-12T00:11:20Z" data-relative="" data-epoch="1407802280000">5年前</time>
+  <span class="hatena-star-comment-container"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/comment.gif" tabindex="0" alt="Comments" title="Comments" class="hatena-star-comment-button" style="cursor: pointer; margin: 0px; padding: 0px; border: none; vertical-align: middle; display: none;"></span><span class="hatena-star-star-container"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/hatena-star-add-button.svg" tabindex="0" alt="Add Star" title="Add Star" class="hatena-star-add-button" style="cursor: pointer; margin: 0px 3px; padding: 0px; border: none; vertical-align: middle;"></span></p>
+
+  <a href="https://minghai.hatenadiary.org/entry/20140402/p1#" class="comment-delete-button js-comment-delete-button">
+  </a>
+</li>
+
+      <li class="read-more-comments" style=""><a>もっと読む</a></li>
+    </ul>
+    
+      <a class="leave-comment-title js-leave-comment-title">コメントを書く</a>
+    
+  </div>
+
+  </footer>
+
+  </div>
+</article>
+
+      
+      
+    
+  
+
+  
+  <!-- rakuten_ad_target_end -->
+  <!-- google_ad_section_end -->
+  
+  
+  
+  <div class="pager pager-permalink permalink">
+    
+      
+      <span class="pager-prev">
+        <a href="https://minghai.hatenadiary.org/entry/20140413/p1" rel="prev">
+          <span class="pager-arrow">« </span>
+          非公式PDF版SICPのKindle版を公開しました
+        </a>
+      </span>
+    
+    
+      
+      <span class="pager-next">
+        <a href="https://minghai.hatenadiary.org/entry/20130515/p1" rel="next">
+           [翻訳] CAP定理 FAQ
+          <span class="pager-arrow"> »</span>
+        </a>
+      </span>
+    
+  </div>
+
+
+  
+
+
+
+        </div>
+      </div>
+
+      <aside id="box1">
+  <div id="box1-inner">
+  </div>
+</aside>
+
+    </div><!-- #wrapper -->
+
+    
+<aside id="box2">
+  
+  <div id="box2-inner">
+    
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="https://minghai.hatenadiary.org/archive">
+      最新記事
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist ">
+  
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a href="https://minghai.hatenadiary.org/entry/2019/06/06/041908" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">Goの型アサーションと型変換</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a href="https://minghai.hatenadiary.org/entry/2019/05/30/012628" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">Goにはなぜ基本的なデータ構造が標準ライブラリにないのか？</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a href="https://minghai.hatenadiary.org/entry/2019/05/29/163503" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">Goのパッケージ、ディレクトリ構造とエラー処理</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a href="https://minghai.hatenadiary.org/entry/2019/05/25/185802" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">Goでパッケージ名とコマンド名を同じにしたい場合に</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a href="https://minghai.hatenadiary.org/entry/2019/05/25/000654" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">Goに関するアレやコレや</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+</ul>
+
+      </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-category">
+  <div class="hatena-module-title">
+    Category
+  </div>
+  <div class="hatena-module-body">
+    <ul class="hatena-urllist">
+      
+        <li>
+          <a href="https://minghai.hatenadiary.org/archive/category/Go" class="category-Go">
+            Go (8)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://minghai.hatenadiary.org/archive/category/%E9%9B%91%E8%AB%87" class="category-雑談">
+            雑談 (1)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://minghai.hatenadiary.org/archive/category/Java" class="category-Java">
+            Java (2)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://minghai.hatenadiary.org/archive/category/android" class="category-android">
+            android (21)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://minghai.hatenadiary.org/archive/category/paxos" class="category-paxos">
+            paxos (3)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://minghai.hatenadiary.org/archive/category/python" class="category-python">
+            python (1)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://minghai.hatenadiary.org/archive/category/%E7%BF%BB%E8%A8%B3" class="category-翻訳">
+            翻訳 (1)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-archive" data-archive-type="default" data-archive-url="https://minghai.hatenadiary.org/archive">
+  <div class="hatena-module-title">
+    <a href="https://minghai.hatenadiary.org/archive">月別アーカイブ</a>
+  </div>
+  <div class="hatena-module-body">
+  
+
+  
+    
+    
+      <ul class="hatena-urllist">
+        
+          <li class="archive-module-year" data-year="2019">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a href="https://minghai.hatenadiary.org/archive/2019" class="archive-module-year-title">
+              2019 (9)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2019/6" class="archive-module-month-title">
+                    2019 / 6 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2019/5" class="archive-module-month-title">
+                    2019 / 5 (8)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2014">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a href="https://minghai.hatenadiary.org/archive/2014" class="archive-module-year-title">
+              2014 (4)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2014/8" class="archive-module-month-title">
+                    2014 / 8 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2014/5" class="archive-module-month-title">
+                    2014 / 5 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2014/4" class="archive-module-month-title">
+                    2014 / 4 (2)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2013">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a href="https://minghai.hatenadiary.org/archive/2013" class="archive-module-year-title">
+              2013 (5)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2013/5" class="archive-module-month-title">
+                    2013 / 5 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2013/4" class="archive-module-month-title">
+                    2013 / 4 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2013/2" class="archive-module-month-title">
+                    2013 / 2 (2)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2012">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a href="https://minghai.hatenadiary.org/archive/2012" class="archive-module-year-title">
+              2012 (2)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2012/5" class="archive-module-month-title">
+                    2012 / 5 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2012/2" class="archive-module-month-title">
+                    2012 / 2 (1)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2011">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a href="https://minghai.hatenadiary.org/archive/2011" class="archive-module-year-title">
+              2011 (3)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2011/3" class="archive-module-month-title">
+                    2011 / 3 (3)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2010">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a href="https://minghai.hatenadiary.org/archive/2010" class="archive-module-year-title">
+              2010 (3)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2010/8" class="archive-module-month-title">
+                    2010 / 8 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2010/2" class="archive-module-month-title">
+                    2010 / 2 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2010/1" class="archive-module-month-title">
+                    2010 / 1 (1)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2009">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a href="https://minghai.hatenadiary.org/archive/2009" class="archive-module-year-title">
+              2009 (14)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2009/9" class="archive-module-month-title">
+                    2009 / 9 (3)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2009/8" class="archive-module-month-title">
+                    2009 / 8 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2009/6" class="archive-module-month-title">
+                    2009 / 6 (3)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2009/5" class="archive-module-month-title">
+                    2009 / 5 (6)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2009/3" class="archive-module-month-title">
+                    2009 / 3 (1)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2008">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a href="https://minghai.hatenadiary.org/archive/2008" class="archive-module-year-title">
+              2008 (29)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2008/12" class="archive-module-month-title">
+                    2008 / 12 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2008/11" class="archive-module-month-title">
+                    2008 / 11 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2008/10" class="archive-module-month-title">
+                    2008 / 10 (3)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2008/8" class="archive-module-month-title">
+                    2008 / 8 (6)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2008/7" class="archive-module-month-title">
+                    2008 / 7 (3)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2008/6" class="archive-module-month-title">
+                    2008 / 6 (5)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2008/5" class="archive-module-month-title">
+                    2008 / 5 (9)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2008/1" class="archive-module-month-title">
+                    2008 / 1 (1)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2007">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a href="https://minghai.hatenadiary.org/archive/2007" class="archive-module-year-title">
+              2007 (14)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2007/12" class="archive-module-month-title">
+                    2007 / 12 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2007/11" class="archive-module-month-title">
+                    2007 / 11 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2007/9" class="archive-module-month-title">
+                    2007 / 9 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2007/8" class="archive-module-month-title">
+                    2007 / 8 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2007/7" class="archive-module-month-title">
+                    2007 / 7 (3)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2007/6" class="archive-module-month-title">
+                    2007 / 6 (3)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2007/4" class="archive-module-month-title">
+                    2007 / 4 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2007/2" class="archive-module-month-title">
+                    2007 / 2 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2007/1" class="archive-module-month-title">
+                    2007 / 1 (1)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2006">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a href="https://minghai.hatenadiary.org/archive/2006" class="archive-module-year-title">
+              2006 (39)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2006/12" class="archive-module-month-title">
+                    2006 / 12 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2006/10" class="archive-module-month-title">
+                    2006 / 10 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2006/8" class="archive-module-month-title">
+                    2006 / 8 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2006/7" class="archive-module-month-title">
+                    2006 / 7 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2006/6" class="archive-module-month-title">
+                    2006 / 6 (7)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2006/5" class="archive-module-month-title">
+                    2006 / 5 (12)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2006/4" class="archive-module-month-title">
+                    2006 / 4 (12)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2006/3" class="archive-module-month-title">
+                    2006 / 3 (2)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2005">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a href="https://minghai.hatenadiary.org/archive/2005" class="archive-module-year-title">
+              2005 (27)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2005/12" class="archive-module-month-title">
+                    2005 / 12 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2005/11" class="archive-module-month-title">
+                    2005 / 11 (5)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2005/10" class="archive-module-month-title">
+                    2005 / 10 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2005/9" class="archive-module-month-title">
+                    2005 / 9 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2005/8" class="archive-module-month-title">
+                    2005 / 8 (11)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a href="https://minghai.hatenadiary.org/archive/2005/7" class="archive-module-month-title">
+                    2005 / 7 (7)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+      </ul>
+    
+  
+
+
+</div>
+</div>
+
+    
+    
+  </div>
+</aside>
+
+
+  </div>
+</div>
+
+
+
+
+        
+
+        
+
+      </div>
+    </div>
+    
+<footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    
+      <div style="display:none !important" class="guest-footer js-guide-register test-blogs-register-guide" data-action="guide-register">
+  <div class="guest-footer-content">
+    <h3>はてなブログをはじめよう！</h3>
+    <p>minghaiさんは、はてなブログを使っています。あなたもはてなブログをはじめてみませんか？</p>
+    <div class="guest-footer-btn-container">
+      <div class="guest-footer-btn">
+        <a class="btn btn-register js-inherit-ga" href="https://blog.hatena.ne.jp/register?via=200227" target="_blank">はてなブログをはじめる（無料）</a>
+      </div>
+      <div class="guest-footer-btn">
+        <a href="https://hatenablog.com/guide" target="_blank">はてなブログとは</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <address class="footer-address">
+      <a href="https://minghai.hatenadiary.org/">
+        <img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/blog-icon-noimage.png" width="16" height="16" alt="minghaiの日記">
+        <span class="footer-address-name">minghaiの日記</span>
+      </a>
+    </address>
+    <p class="services">
+      Powered by <a href="https://hatenablog.com/">Hatena Blog</a>
+      |
+        <a href="https://blog.hatena.ne.jp/-/abuse_report?target_url=https%3A%2F%2Fminghai.hatenadiary.org%2Fentry%2F20140402%2Fp1" class="report-abuse-link test-report-abuse-link" target="_blank">ブログを報告する</a>
+    </p>
+  </div>
+</footer>
+
+
+    
+
+    
+  <script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/HatenaStar.js"></script>
+
+
+    
+    
+
+<div class="quote-box" style="display: none;">
+  <div class="tooltip-quote tooltip-quote-star" style="display: block;">
+    <i class="blogicon-star" title="引用スターをつける"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-stock" style="display: block;">
+    <i class="blogicon-quote" title="引用をストック"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-tweet js-tooltip-quote-tweet">
+    <a class="js-tweet-quote" target="_blank" data-track-name="quote-tweet" data-track-once=""><i class="blogicon-twitter" title="引用してツイートする"></i></a>
+  </div>
+</div>
+
+<div class="message-box" id="quote-star-message-box" style="display: none; position: absolute;">
+  スターをつけました
+</div>
+
+<div class="quote-stock-panel" id="quote-stock-message-box" style="position: absolute; z-index: 3000">
+  <div class="message-box" id="quote-stock-succeeded-message" style="display: none">
+    <p>引用をストックしました</p>
+    <button class="btn btn-primary" id="quote-stock-show-editor-button" data-track-name="curation-quote-edit-button">ストック一覧を見る</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="message-box" id="quote-login-required-message" style="display: none">
+    <p>引用するにはまずログインしてください</p>
+    <button class="btn btn-primary" id="quote-login-button">ログイン</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="quote-stock-failed-message" style="display: none">
+    <p>引用をストックできませんでした。再度お試しください</p>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="unstockable-quote-message-box" style="display: none; position: absolute; z-index: 3000;">
+    <p>限定公開記事のため引用できません。</p>
+  </div>
+</div>
+
+<script type="x-underscore-template" id="js-requote-button-template">
+  <div class="requote-button js-requote-button">
+    <button class="requote-button-btn tipsy-top" title="引用する"><i class="blogicon-quote"></i></button>
+  </div>
+</script>
+
+
+
+    
+    <div id="hidden-subscribe-button" style="display: none;">
+      <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box">
+
+  <a href="https://minghai.hatenadiary.org/entry/20140402/p1#" class="hatena-follow-button js-hatena-follow-button unsubscribing">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-name="profile-widget-subscribe-button" data-track-once="">
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box" style="display: block;">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">1</span>
+  </div>
+</div>
+
+    </div>
+
+    
+  <script type="text/javascript" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/widgets.js"></script>
+
+<script type="text/javascript" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+<script type="text/javascript" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/jquery.min.js"></script>
+<script type="text/javascript" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/jquery-ui.1.10.0.custom.min.js"></script>
+<script type="text/javascript" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/jquery.flot.js"></script>
+<script type="text/javascript" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/jquery.flot.time.js"></script>
+<script id="vendor-js" data-env="production" type="text/javascript" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/vendor.js" crossorigin="anonymous"></script>
+
+
+
+
+
+<script type="text/javascript" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/texts-ja.js"></script>
+<script id="hatenablog-js" data-env="production" type="text/javascript" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/hatenablog.js" crossorigin="anonymous"></script><div style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; display: none;"></div>
+
+
+  <script type="text/javascript">Hatena.Diary.GlobalHeader.init()</script>
+
+
+<script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/api.js" async="" defer=""></script>
+
+
+
+
+
+
+    
+  <script id="valve-dmp" data-service="blog" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/dmp.js" data-test-id="dmpjs" async=""></script>
+
+
+    
+
+
+
+
+
+  
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/widget_iframe.6787510241df65d128e2b60207ad4c25.html" title="Twitter settings iframe" style="display: none;"></iframe><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div style="top: -9999px; z-index: -9999;"></div><script type="text/javascript" id="">(function(a){var b=a.createElement("iframe"),c="https:"==a.location.protocol?"https://":"http://";b.src=c+"cf.im-apps.net/imid/beacon.html";b.style.display="none";a.body.appendChild(b)})(document);</script><iframe src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/beacon.html" style="display: none;"></iframe><script type="text/javascript" id="" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/pageview.js"></script><script type="text/javascript" id="">!function(c,d,b,f){if(!d[c]){d[c]=function(){d[c].instances.push(this);this.init&&this.init()};d[c].instances=[];for(var a=0,e=["td_send","td_send_imid"];a<e.length;a++)d[c].prototype[e[a]]=function(a){return function(){this["tmp_"+a]=this["tmp_"+a]||[];this["tmp_"+a].push(Array.prototype.slice.call(arguments))}}(e[a]);a=b.getElementsByTagName(f)[0];b=b.createElement(f);b.async=!0;b.src="//cf.im-apps.net/sdk/tdim-1.1.0.min.js";a.parentNode.insertBefore(b,a)}}("TDIM",window,document,"script");
+var tdimjs=new TDIM;tdimjs.debug=!1;tdimjs.td_host="in.ybi.idcfcloud.net";tdimjs.td_api_key="312/b4f0042d7c26b4f44d2561bbb5c396349b54b10e";tdimjs.td_db="cosmi_6604";tdimjs.im_api_token="TlOjMPj_m54xiIkb8Mzm7Q";tdimjs.td_send_imid("pageviews",{custom_data:"undefined"});</script><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==" width="1" height="1" border="0" class="bigmining_dmp_beacon" style="display: none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==" width="1" height="1" border="0" class="bigmining_dmp_beacon" style="display: none;"><img src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/adsct" width="1" height="1" border="0" class="bigmining_dmp_beacon" style="display: none;"><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/activityi.html"></iframe><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P5GX4M');</script><div style="display: none; visibility: hidden;"><script type="text/javascript">!function(c,d,b,f){if(!d[c]){d[c]=function(){d[c].instances.push(this);this.init&&this.init()};d[c].instances=[];for(var a=0,e=["td_send","td_send_imid"];a<e.length;a++)d[c].prototype[e[a]]=function(a){return function(){this["tmp_"+a]=this["tmp_"+a]||[];this["tmp_"+a].push(Array.prototype.slice.call(arguments))}}(e[a]);a=b.getElementsByTagName(f)[0];b=b.createElement(f);b.async=!0;b.src="//cf.im-apps.net/sdk/tdim-0.11.2.js";a.parentNode.insertBefore(b,a)}}("TDIM",window,document,"script");var t=new TDIM;
+t.td_api_key="312/b4f0042d7c26b4f44d2561bbb5c396349b54b10e";t.td_db="cosmi_8045";t.im_api_token="omO0CDJd98sxiIkb8Mzm7Q";t.gtm_dl="dataLayer";t.td_send_imid("pageviews");</script></div><div style="display: none; visibility: hidden;">
+<script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/oct.js" type="text/javascript"></script>
+<script type="text/javascript">twttr.conversion.trackPid("nudt9",{tw_sale_amount:0,tw_order_quantity:0});</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;">
+<script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/oct.js" type="text/javascript"></script>
+<script type="text/javascript">twttr.conversion.trackPid("nv3b2",{tw_sale_amount:0,tw_order_quantity:0});</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;"><script type="text/javascript">var _fout_queue=_fout_queue||{};void 0===_fout_queue.segment&&(_fout_queue.segment={});void 0===_fout_queue.segment.queue&&(_fout_queue.segment.queue=[]);_fout_queue.segment.queue.push({user_id:10595,advertiser_id:1808,contractor_id:5});(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==document.location.protocol?"https://":"http://")+"js.fout.jp/segmentation.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+    </div><div style="display: none; visibility: hidden;">
+<script>!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1.1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="//static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("init","ny5vy");twq("track","PageView");</script>
+</div><div style="display: none; visibility: hidden;">
+<script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1733466696949178");fbq("track","PageView");</script>
+<noscript></noscript>
+
+
+</div><script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/adsct(1)" type="text/javascript"></script><script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/adsct(2)" type="text/javascript"></script><iframe src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/beacon(1).html" style="display: none;"></iframe><script src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/adsct(3)" type="text/javascript"></script><iframe id="google_osd_static_frame_7188000319988" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./非公式PDF版SICPの全訳を公開しました - minghaiの日記_files/saved_resource(2).html"></iframe><div style="color: rgb(0, 0, 0); position: absolute; display: none; z-index: 10002; left: 0px; top: 0px; background-color: rgb(255, 255, 255); border: 0px; padding: 0px; text-align: center;"><div style="text-align: left; margin: 0px; padding: 0px;"></div></div></body></html>
