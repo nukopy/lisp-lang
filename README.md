@@ -1,6 +1,6 @@
 # LISP language
 
-This repository is LISP playground.
+This repository is the LISP playground.
 
 ## setup
 
